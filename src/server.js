@@ -14,6 +14,13 @@ async function aiRiskSignal(message) {
   const result = await riskAdvisor.classify(message);
   return { result, signal: result.status === 'signal' ? result.signal : null };
 }
+// Follow-up answers reuse the last assessment, in the language it was given in.
+function followUpText(previous) {
+  const ar = /[\u0600-\u06FF]/.test(previous.response || '');
+  const lead = ar ? 'أقصد الطلب الذي قيّمناه للتو.' : 'I’m referring to the request we just assessed.';
+  return `${lead} ${previous.response} ${previous.protectionPlan?.nextStep || ''}`.trim();
+}
+
 function aiRiskSummary(result) {
   return { status: result.status, provider: result.provider, authority: 'may_raise_risk_only', applied: false, latencyMs: result.latencyMs ?? null };
 }
@@ -213,7 +220,10 @@ const server = http.createServer((req, res) => {
         const session = conversationSessions.getOrCreate(input.sessionId);
         const message = input.message.trim().slice(0, 2000);
         const previous = session.previousAssessment;
-        const followUp = Boolean(previous && /^(why|how|what|can you explain|explain|tell me more|what should i do|what now|is it safe)\b/i.test(message));
+        // A short question that points back at the last assessment ("Why is this risky?") is a follow-up.
+        // A longer or self-contained message ("What time does the bank open on Saturday?") is assessed afresh.
+        const wordCount = message.split(/\s+/).filter(Boolean).length;
+        const followUp = Boolean(previous && wordCount <= 7 && /^(why|how|what|can you explain|explain|tell me more|what should i do|what now|is it safe)\b/i.test(message));
         let aiRisk = null;
         let assessment;
         let aiResult = null;
@@ -267,9 +277,9 @@ const server = http.createServer((req, res) => {
             conversationHistory: history, previousAssessment: followUp ? previous : null });
           conversation = model.status === 'suggestion_only'
             ? { status: model.status, provider: model.provider, explanation: model.suggestion.explanation, source: 'bounded_model_suggestion' }
-            : { status: 'deterministic_fallback', provider: 'none', explanation: followUp ? `I’m referring to the request we just assessed. ${previous.response} ${previous.protectionPlan?.nextStep || ''}`.trim() : assessment.response, source: 'deterministic_policy_guidance' };
+            : { status: 'deterministic_fallback', provider: 'none', explanation: followUp ? followUpText(previous) : assessment.response, source: 'deterministic_policy_guidance' };
         } catch (error) {
-          conversation = { status: 'provider_fallback', provider: 'none', explanation: followUp ? `I’m referring to the request we just assessed. ${previous.response} ${previous.protectionPlan?.nextStep || ''}`.trim() : assessment.response, source: 'deterministic_policy_guidance', note: error.message };
+          conversation = { status: 'provider_fallback', provider: 'none', explanation: followUp ? followUpText(previous) : assessment.response, source: 'deterministic_policy_guidance', note: error.message };
         }
         trace.step('explain', { source: conversation.source, status: conversation.status, provider: conversation.provider, fallbackReason: conversation.note || null });
         conversationSessions.addTurn(session, 'user', message);
@@ -393,7 +403,7 @@ const server = http.createServer((req, res) => {
   fs.readFile(file, (err, data) => {
     if (err) return send(res, 404, 'Not found', 'text/plain');
     const ext = path.extname(file).toLowerCase();
-    const types = {'.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.html':'text/html; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.json':'application/json'};
+    const types = {'.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.html':'text/html; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json'};
     const type = types[ext] || 'application/octet-stream';
     send(res, 200, data, type);
   });

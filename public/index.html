@@ -1,16 +1,149 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yumma — Life Intelligence</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/style.css"></head><body><main class="shell"><header><div class="mark">Y</div><div><div class="brand">YUMMA</div><div class="tag">LIFE INTELLIGENCE</div></div><span class="local">LOCAL SYNTHETIC DEMO</span></header><section class="hero"><div class="hero-copy"><p class="eyebrow">THE PRE-COMMITMENT AI AGENT</p><h1>She remembers your promise.<br><em>You stay in control.</em></h1><p class="intro">Meet Yumma — an AI agent that protects a family the way a mother does. She recognises pressure, brings back the promise you made when calm — in your own voice — and asks the question a cloned voice cannot answer.</p><div class="hero-tags"><span>Calm-State Contract</span><span>Your own voice</span><span>Family question</span><span>19 UAE scam patterns</span></div></div><div class="holo-card"><img src="/yumma-hologram-concept.png" alt="Yumma's conceptual holographic guide identity, wearing an emerald abaya with gold embroidery"/><span class="holo-caption">YUMMA · HOLOGRAM CONCEPT</span></div></section><section class="journey" aria-label="How Yumma protects Salma, in five moments"><ol><li><span class="medal" data-icon="moon"></span><span class="step">01</span><b>Calm</b><small>She records her promise in her own voice</small></li><li><span class="medal" data-icon="message"></span><span class="step">02</span><b>Pressure</b><small>An urgent request arrives</small></li><li><span class="medal" data-icon="shield"></span><span class="step">03</span><b>Pause</b><small>Yumma recognises the pattern</small></li><li><span class="medal" data-icon="wave"></span><span class="step">04</span><b>Promise</b><small>Her own words play back</small></li><li><span class="medal" data-icon="family"></span><span class="step">05</span><b>Choice</b><small>The family question, then her decision</small></li></ol></section>
-<section class="experience-tools" aria-label="Accessibility and voice controls"><div><strong>Make Yumma comfortable to use</strong><small>Voice playback uses the speech voices available in your browser. It is not a live AI voice connection.</small></div><div class="tool-buttons"><button class="secondary" id="listenYumma" type="button">🎙 Speak to Yumma</button><button class="secondary" id="speakLast" type="button">▶ Hear Yumma</button><button class="secondary" id="stopVoice" type="button">■ Stop voice</button><button class="secondary" id="largeText" type="button" aria-pressed="false">A+ Larger text</button><button class="secondary" id="plainLanguage" type="button" aria-pressed="false">Plain-language view</button></div><p id="voiceStatus" class="note" role="status" aria-live="polite">Voice playback is ready. Speech input availability depends on your browser; microphone access requires your permission.</p></section><section class="judge-console" aria-labelledby="judgeTitle"><div class="judge-heading"><span class="medal" data-icon="gauge"></span><div><p class="eyebrow">CHAMPIONSHIP WALKTHROUGH</p><h2 id="judgeTitle">Judge demonstration mode</h2><p>Select a synthetic scenario. Yumma will run the actual protection engine and show the evidence.</p></div><span class="local">NO REAL DATA</span></div><div class="judge-controls"><label for="scenarioSelect">DEMONSTRATION SCENARIO</label><select id="scenarioSelect"><option value="">Loading scenarios…</option></select><button id="runScenario" type="button">Run selected scenario</button><button class="secondary" id="resetDemo" type="button">Reset demo session</button></div><p id="scenarioLearning" class="note" role="status" aria-live="polite">Five synthetic scenarios are available.</p><div id="judgeEvidence" class="judge-evidence" aria-live="polite">No scenario run yet. Choose one above to begin.</div></section>
-<section class="workspace"><div class="input-panel"><div class="card-head"><span class="medal" data-icon="message"></span><div><label for="message">INCOMING REQUEST</label><p class="sender"><span class="sender-dot" data-icon="user"></span>Unknown sender · just now</p></div></div><div class="bubble"><textarea id="message">Your bank account will be blocked. Transfer your money immediately to this secure account. Keep this secret.</textarea></div><div class="actions"><button id="run">Ask Yumma to assess</button><button class="secondary" id="reset">Reset example</button></div><p class="note">Synthetic scenario only. No bank connection, payment or external action is performed.</p></div><div class="result" id="result"><div class="posture" id="postureCard"><span>YUMMA PROTECTION POSTURE</span><strong id="postureValue">AWAITING REQUEST</strong><p id="postureNext">Submit a synthetic scenario to see how Yumma responds.</p></div><div class="empty"><div class="ready-portrait"><img src="/yumma-portrait.jpg" alt="Yumma, the AI agent"></div><h2>Yumma is ready</h2><p>Submit the example to see the agent's reasoning and safeguards.</p></div></div></section><footer>Human authority remains with Salma · Synthetic data · No external tools enabled · Voice recordings stay on this device · Hologram is a visual concept</footer>
-<section class="promise-panel" aria-label="Your promise and your family question"><div class="promise-card"><div class="card-head"><span class="medal" data-icon="mic"></span><div><p class="eyebrow">CALM-STATE CONTRACT</p><h2>Your promise, in your own voice</h2></div></div><p id="promiseText" class="promise-quote">Loading Salma’s promise…</p><div class="wave-slot" data-wave></div><label class="consent"><input id="voiceConsent" type="checkbox"> I agree to record my promise. The recording stays on this device and is never uploaded.</label><div class="actions"><button id="recordVoice" type="button">● Record my promise</button><button class="secondary" id="stopRecording" type="button" disabled>■ Stop</button><button class="secondary" id="playVoice" type="button" disabled>▶ Play my promise</button><button class="secondary" id="deleteVoice" type="button" disabled>Delete recording</button></div><p id="voiceRecordStatus" class="note" role="status" aria-live="polite">Up to 15 seconds. When pressure is detected, Yumma plays your own words back to you.</p></div><div class="promise-card"><div class="card-head"><span class="medal" data-icon="family"></span><div><p class="eyebrow">FAMILY VERIFICATION QUESTION</p><h2>The question a cloned voice cannot answer</h2></div></div><div id="familyList" class="note">Loading…</div><label for="familyQuestion">Question only your family would know</label><input id="familyQuestion" type="text" maxlength="200" placeholder="Example: What did we call Grandma’s old green car?"><label for="familyAnswer">Answer (stored only as a protected hash, never shown again)</label><input id="familyAnswer" type="password" maxlength="80" autocomplete="off"><label class="consent"><input id="familyConsent" type="checkbox"> I consent to saving this family question for verification.</label><button id="saveFamily" type="button">Save family question</button><p id="familyStatus" class="note" role="status" aria-live="polite"></p></div></section>
-<section class="memory-panel">
-  <div class="card-head"><span class="medal" data-icon="heart"></span><h2>Personal Wisdom Graph</h2></div>
-  <p>Local synthetic profile memory. Nothing is saved until you explicitly consent.</p>
-  <label for="memoryText">A personal note for Yumma to remember</label>
-  <textarea id="memoryText" rows="2" placeholder="Example: I prefer plain language. Or: I never share a one-time code."></textarea>
-  <label class="consent"><input id="memoryConsent" type="checkbox"> I consent to storing this memory for the stated purpose.</label>
-  <button id="saveMemory" type="button">Save with consent</button>
-  <div id="memoryStatus" role="status"></div>
-  <div id="wisdomSummary"></div>
-  <div id="memoryList"></div>
-</section>
-</main><script src="/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06140f">
+<meta name="description" content="Yumma, a pre-commitment AI agent that protects a family the way a mother does.">
+<title>Yumma · Life Intelligence</title>
+<link rel="icon" href="/yumma-portrait.jpg">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark">Y</span><div><b>YUMMA</b><small>LIFE INTELLIGENCE</small></div></div>
+  <span class="local" id="modeTag">SYNTHETIC DEMO</span>
+</header>
+
+<main class="stage">
+  <section class="intro" aria-label="About Yumma">
+    <p class="eyebrow">THE PRE-COMMITMENT AI AGENT</p>
+    <h1>She remembers your promise. <em>You stay in control.</em></h1>
+    <p class="lede">Yumma protects a family the way a mother does. She notices pressure, plays back the promise you made while calm, in your own voice, and asks the question a cloned voice cannot answer.</p>
+    <ol class="howto">
+      <li><span>1</span><div><b>A message arrives</b> on Salma’s phone.</div></li>
+      <li><span>2</span><div><b>Tap “Check with Yumma”.</b> She appears and speaks.</div></li>
+      <li><span>3</span><div><b>Answer the family question</b> the way the caller would.</div></li>
+    </ol>
+    <p class="sound"><span data-icon="speaker"></span>Sound on: Yumma speaks.</p>
+    <p class="judge-note" id="judgeNote" hidden>Judge link: this is your own private copy of Salma, a synthetic user. Please use test messages only.</p>
+    <div class="chips"><span>Calm-State Contract</span><span>Your own voice</span><span>Family question</span><span>19 UAE scam patterns</span></div>
+  </section>
+
+  <section class="phone-wrap" aria-label="The Yumma app on Salma’s phone">
+    <div class="phone" id="phone">
+      <div class="statusbar"><span id="clock">9:41</span><span class="island" aria-hidden="true"></span><span class="sb-icons" data-icon="status"></span></div>
+
+      <div class="app-header">
+        <button class="hdr-avatar" id="hdrAvatar" type="button" aria-label="Hear Yumma"><img src="/yumma-portrait.jpg" alt=""></button>
+        <div class="hdr-text"><b>Yumma</b><small><i class="dot"></i><span id="hdrStatus">Protecting Salma</span></small></div>
+        <button class="icon-btn" id="textSize" type="button" aria-pressed="false" aria-label="Larger text">Aa</button>
+        <button class="icon-btn" id="voiceToggle" type="button" aria-pressed="true" aria-label="Yumma’s voice is on"><span data-icon="speaker"></span></button>
+        <button class="icon-btn judge-btn" id="hoodBtnHdr" type="button" aria-controls="hood" aria-label="Under the hood, for judges">Judges</button>
+      </div>
+
+      <div class="screens">
+        <section class="screen active" id="screen-home" aria-label="Home">
+          <div class="holo-stage" id="homeHolo"></div>
+          <div class="greet">
+            <p id="greetText">Good afternoon, Salma. I’m here whenever something feels rushed.</p>
+            <button id="meetYumma" class="pill-btn" type="button"><span data-icon="play"></span>Hear Yumma</button>
+          </div>
+          <div class="status-cards">
+            <button class="scard" type="button" data-go="promises"><span class="medal sm" data-icon="mic"></span><span class="sc-body"><b>Your promise</b><small id="homePromise">Loading…</small></span><span class="sc-state" id="homePromiseState">…</span></button>
+            <button class="scard" type="button" data-go="family"><span class="medal sm" data-icon="family"></span><span class="sc-body"><b>Family question</b><small id="homeFamily">Loading…</small></span><span class="sc-state" id="homeFamilyState">…</span></button>
+            <div class="scard"><span class="medal sm" data-icon="shield"></span><span class="sc-body"><b>Messages checked</b><small id="homeChecks">None yet today</small></span></div>
+          </div>
+          <button class="primary wide" type="button" data-go="chat">Talk to Yumma</button>
+        </section>
+
+        <section class="screen" id="screen-chat" aria-label="Chat with Yumma">
+          <div class="chat" id="chat" aria-live="polite"></div>
+          <div class="suggest" id="suggest"></div>
+          <form class="composer" id="composer" autocomplete="off">
+            <button type="button" class="icon-btn" id="micBtn" aria-label="Speak to Yumma"><span data-icon="mic"></span></button>
+            <input id="chatInput" type="text" maxlength="2000" dir="auto" placeholder="Message Yumma, or paste a message…" aria-label="Message Yumma">
+            <button type="submit" class="send" aria-label="Send"><span data-icon="send"></span></button>
+          </form>
+        </section>
+
+        <section class="screen" id="screen-promises" aria-label="Your promise">
+          <div class="pg-head"><span class="medal" data-icon="mic"></span><div><p class="eyebrow">CALM-STATE CONTRACT</p><h2>Your promise, in your own voice</h2></div></div>
+          <blockquote id="promiseText" class="promise-quote">Loading Salma’s promise…</blockquote>
+          <div class="wave-slot" data-wave></div>
+          <label class="check"><input type="checkbox" id="voiceConsent"> <span>I agree to record my promise. The recording stays on this phone and is never uploaded.</span></label>
+          <div class="rec-row">
+            <button id="recordVoice" class="rec" type="button"><i></i>Record</button>
+            <button id="stopRecording" class="ghost" type="button" disabled>Stop</button>
+            <button id="playVoice" class="ghost" type="button" disabled>Play</button>
+            <button id="deleteVoice" class="ghost danger" type="button" disabled>Delete</button>
+          </div>
+          <p id="voiceRecordStatus" class="note" role="status">Up to 15 seconds. When pressure is detected, Yumma plays your own voice back to you.</p>
+        </section>
+
+        <section class="screen" id="screen-family" aria-label="Family question">
+          <div class="pg-head"><span class="medal" data-icon="family"></span><div><p class="eyebrow">FAMILY QUESTION</p><h2>The question a cloned voice cannot answer</h2></div></div>
+          <div id="familyList" class="fq-list">Loading…</div>
+          <details class="fq-new">
+            <summary>Set a new family question</summary>
+            <input id="familyQuestion" type="text" maxlength="160" placeholder="A question only your family would know">
+            <input id="familyAnswer" type="text" maxlength="80" placeholder="The answer (kept only as a protected hash)">
+            <label class="check"><input type="checkbox" id="familyConsent"> <span>I agree to save this question. The answer is kept only as a protected hash.</span></label>
+            <button id="saveFamily" class="primary" type="button">Save question</button>
+            <p id="familyStatus" class="note" role="status"></p>
+          </details>
+        </section>
+      </div>
+
+      <nav class="tabbar" aria-label="App sections">
+        <button type="button" data-tab="home" class="active"><span data-icon="home"></span><small>Home</small></button>
+        <button type="button" data-tab="chat"><span data-icon="message"></span><small>Chat</small><i class="badge" id="chatBadge" hidden></i></button>
+        <button type="button" data-tab="promises"><span data-icon="mic"></span><small>Promise</small></button>
+        <button type="button" data-tab="family"><span data-icon="family"></span><small>Family</small></button>
+      </nav>
+
+      <div class="notif" id="notif" role="alert" hidden>
+        <div class="notif-top"><span class="app-ico" data-icon="message"></span><b>Messages</b><small>now</small></div>
+        <p class="notif-from" id="notifFrom">+971 50 ••• 4821</p>
+        <p class="notif-text" id="notifText" dir="auto"></p>
+        <div class="notif-actions"><button id="notifCheck" class="primary" type="button"><span data-icon="shield"></span>Check with Yumma</button><button id="notifDismiss" class="ghost" type="button">Later</button></div>
+      </div>
+
+      <div class="holo-overlay" id="holoOverlay" hidden>
+        <div class="ov-top"><span class="ov-brand">YUMMA</span><span class="risk-pill" id="ovRisk"></span></div>
+        <div class="holo-stage big" id="ovHolo"></div>
+        <div class="caption" id="caption" aria-live="assertive" dir="auto"></div>
+        <div class="ov-actions"><button id="ovPromise" class="ghost" type="button"><span data-icon="play"></span>Hear my promise</button><button id="ovContinue" class="primary" type="button">Continue</button></div>
+      </div>
+    </div>
+    <button class="hood-btn" id="hoodBtn" type="button" aria-controls="hood"><span data-icon="steps"></span>Under the hood</button>
+  </section>
+
+  <aside class="hood" id="hood" aria-label="Under the hood, for judges">
+    <div class="hood-head"><div><p class="eyebrow">FOR JUDGES</p><h2>Under the hood</h2></div><button class="icon-btn close" id="hoodClose" type="button" aria-label="Close">✕</button></div>
+    <div class="hood-sec">
+      <h3><span data-icon="message"></span>Send a test message to Salma’s phone</h3>
+      <div class="presets" id="presets"></div>
+      <textarea id="customMsg" rows="3" maxlength="2000" dir="auto" placeholder="Or write any message, in English or Arabic…"></textarea>
+      <button id="sendCustom" class="primary" type="button">Send to Salma’s phone</button>
+    </div>
+    <div class="hood-sec">
+      <h3><span data-icon="steps"></span>What Yumma just did <small id="traceMeta"></small></h3>
+      <ol class="live-trace" id="liveTrace"><li class="idle">Send a message to watch each step run.</li></ol>
+    </div>
+    <div class="hood-sec">
+      <h3><span data-icon="doc"></span>Decision record</h3>
+      <p id="recordInfo" class="note">No decision yet.</p>
+      <div class="row"><button class="secondary" id="dlTrace" type="button" disabled>Download trace</button><button class="secondary" id="dlRecord" type="button" disabled>Download record</button><button class="secondary" id="verifyChain" type="button">Verify record chain</button></div>
+      <p id="chainStatus" class="note" role="status" aria-live="polite"></p>
+    </div>
+    <div class="hood-sec">
+      <h3><span data-icon="lock"></span>Safety, every time</h3>
+      <div class="guarantees" id="guarantees"></div>
+    </div>
+    <p class="note foot">Synthetic user and test messages only. Yumma never moves money, handles a code or contacts anyone on its own.</p>
+  </aside>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

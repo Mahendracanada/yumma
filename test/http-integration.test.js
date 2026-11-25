@@ -146,4 +146,14 @@ test('HTTP integration: local judge journey, safeguards and error handling', asy
   const browser = await fetch(`${base}/`);
   assert.equal(browser.status, 200);
   assert.match(browser.headers.get('content-type'), /text\/html/);
+
+  // Chat follow-ups: a short question about the last assessment reuses it; a new, longer question is assessed afresh.
+  const chat = (message, sessionId) => fetch(`${base}/api/conversation`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ message, sessionId }) }).then(r => r.json());
+  const first = await chat("Hi Mum, it's me. My phone broke so this is my new number. I'm in trouble and need AED 4,000 sent today to a friend's account. Please don't call.");
+  assert.equal(first.assessment.protectionPlan.posture, 'PAUSE_AND_PROTECT');
+  const why = await chat('Why is this risky?', first.sessionId);
+  assert.equal(why.isFollowUp, true);
+  const fresh = await chat('What time does the bank open on Saturday, and is it open on public holidays?', first.sessionId);
+  assert.equal(fresh.isFollowUp, false);
+  assert.notEqual(fresh.assessment.protectionPlan.posture, 'PAUSE_AND_PROTECT');
 });

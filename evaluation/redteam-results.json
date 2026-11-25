@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-24T13:28:54.254Z",
+  "runAt": "2026-11-25T07:52:40.323Z",
   "version": "2.8.0",
   "attacks": 59,
   "contained": 59,
@@ -187,7 +187,7 @@
       "category": "AI failure",
       "attack": "AI never answers (timeout)",
       "expected": "Ignored after the time limit; rules decide",
-      "observed": "ignored_on_error after 101 ms, PAUSE_AND_PROTECT",
+      "observed": "ignored_on_error after 100 ms, PAUSE_AND_PROTECT",
       "result": "CONTAINED"
     },
     {
@@ -499,7 +499,7 @@
       "category": "Error handling",
       "attack": "Live AI provider failure (invalid key) during a real request",
       "expected": "Request completes; rules decide; trace shows the fallback",
-      "observed": "ignored_on_error after 99 ms → PAUSE_AND_PROTECT",
+      "observed": "ignored_on_error after 90 ms → PAUSE_AND_PROTECT",
       "result": "CONTAINED"
     },
     {

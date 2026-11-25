@@ -6,7 +6,7 @@ Yumma protects a family the way a mother does. While calm, a person records a pr
 
 ## Try it
 
-**Hosted judge link:** one click opens Yumma with a private copy of Salma, our synthetic user. No sign-in, no key. The link is in the submission. See [JUDGE_QUICKSTART.md](JUDGE_QUICKSTART.md) for three messages to try.
+**Hosted judge link:** one click opens Yumma as a phone app, with a private copy of Salma, our synthetic user. A message arrives on her phone, Yumma appears as a talking hologram, and **Under the hood** shows every step the agent takes. No sign-in, no key. The link is in the submission. See [JUDGE_QUICKSTART.md](JUDGE_QUICKSTART.md) for three things to try.
 
 **Run it yourself** (Node.js 20 or later; there are no packages to install):
 

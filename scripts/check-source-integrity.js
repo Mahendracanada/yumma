@@ -6,7 +6,7 @@ const required = [
   'src/life-ripple.js', 'src/protection-orchestrator.js', 'src/calm-contract.js',
   'src/model-adapter.js', 'src/demo-mode.js', 'src/conversation-session.js', 'src/family-check.js',
   'data/salma-profile.json', 'public/index.html', 'public/app.js', 'public/style.css',
-  'public/yumma-hologram-concept.png', 'public/yumma-portrait.jpg', 'scripts/run-evaluation.js', 'scripts/smoke-demo.js',
+  'public/yumma-hologram-concept.png', 'public/yumma-portrait.jpg', 'public/yumma-holo.webp', 'scripts/run-evaluation.js', 'scripts/smoke-demo.js',
   'evaluation/run-challenge.js', 'evaluation/challenge-tuning.json', 'evaluation/challenge-holdout.json',
   'evaluation/challenge-fresh.json', 'evaluation/challenge-tuning2.json', 'evaluation/challenge-fresh2.json', 'evaluation/challenge-fresh3.json',
   'evaluation/run-blind.js', 'test/family-check.test.js',

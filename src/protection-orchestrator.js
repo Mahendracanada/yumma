@@ -27,6 +27,15 @@ function buildProtectionPlan({ request, context, risk, ripple, policy }) {
     humanConfirmationRequired = true;
   }
 
+  if (request && request.detectedLanguage === 'ar') {
+    nextStep = ({
+      PAUSE_AND_PROTECT: 'لا تُكمل الإجراء المطلوب. تحقّق بنفسك عبر قناة موثوقة تعرفها.',
+      VERIFY: 'توقّف وتحقّق من الطلب عبر قناة موثوقة تحصل عليها بنفسك.',
+      GENTLE_REMINDER: 'تذكيرك الذي كتبته بنفسك أمامك؛ هل ما زلت تريد اتباعه؟',
+      INFORMATIONAL: 'أشرح لك الطلب، والقرار لك دائماً.'
+    })[posture] || nextStep;
+  }
+
   const ifAlreadyActed = posture === 'PAUSE_AND_PROTECT' || posture === 'VERIFY'
     ? (request && request.detectedLanguage === 'ar'
       ? 'إذا كانت الأموال قد حُوّلت أو شاركت رمزاً: اتصل بالبنك فوراً على الرقم المطبوع على بطاقتك، ثم أبلغ الشرطة: أمان 800 2626 (أبوظبي)، أو ecrime.ae (دبي)، أو 999 في حالات الطوارئ.'
