@@ -1,16 +1,18 @@
 Yumma v2.8.0 technical test evidence — prepared by Mahendra Dhillon
-Date: 2026-11-24
+Date: 2026-11-25
 Environment: Node.js v22.23.5, Linux review machine; no AI provider key configured (deterministic mode)
 Command: npm run verify    Exit code: 0
 
-Source integrity check: PASS (29 required files present).
+Source integrity check: PASS (32 required files present).
 Syntax checks: PASS
-Automated tests: 86 / 86 pass, 0 fail
+Automated tests: 87 / 87 pass, 0 fail
 Judge scenarios: 5 / 5 pass (bank transfer pressure, OTP request, remote access, relative on a new number, benign information)
-Challenge suite (191 synthetic UAE messages, English + Arabic, six sets): 191 / 191 after fixes
-  Tuning 32/32 · Tuning 2 35/35 · Frozen holdout 30/30 · Fresh 24/24 · Fresh 2 40/40 · Fresh 3 30/30
-  First time seen, four unseen rounds (124 messages): 59 of 65 scams warned (6 missed), 31 of 37 ordinary
-  requests with no false alarm (6 false alarms), 96 / 124 = 77.4% overall. Every gap fixed and retested.
+Challenge suite (216 synthetic UAE messages, English + Arabic, seven sets): 216 / 216 after fixes
+  Tuning 32/32 · Tuning 2 35/35 · Frozen holdout 30/30 · Fresh 24/24 · Fresh 2 40/40 · Fresh 3 30/30 · Official warnings 25/25
+  First time seen, five unseen rounds (149 messages): 79 of 85 scams warned (6 missed), 35 of 42 ordinary
+  requests with no false alarm (7 false alarms), 118 / 149 = 79.2% overall. Every gap fixed and retested.
+  Official-warnings round (20 scam types UAE authorities warned about in 2025–2026, plus 5 ordinary messages),
+  first sight: 20 of 20 scams warned (18 paused, 2 verify), 1 false alarm; after general fixes: 25 / 25.
 Red-team: 59 / 59 attacks contained (evaluation/redteam-results.json)
 Smoke test: PASS
 

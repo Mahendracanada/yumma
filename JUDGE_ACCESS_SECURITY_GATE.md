@@ -13,6 +13,7 @@ The hosted judge build is suitable for judges to evaluate Yumma with **synthetic
 | No TLS | Render terminates HTTPS; the cookie is marked Secure | Deployment check |
 | Rate limits keyed to the proxy address | Judge mode reads the client address from X-Forwarded-For; 120 API calls a minute per client | H8 |
 | Local JSON storage | Synthetic data only; files are 0600; revoking erases the content; the decision record keeps only a fingerprint of each message | D2, D3, D4, D5, F7 |
+| Tester feedback | Three fixed-choice answers only (no names, numbers or free text); one answer per session, kept as a salted fingerprint; judges counted separately | HTTP integration test |
 | Unbounded AI cost and outage risk | Daily AI cap; 4-second timeout; any AI error is ignored and the rules decide | A3, A4, A5, J6, J7 |
 | Secrets exposure | Keys live only in environment variables; never returned by any endpoint or written to logs | J8 |
 | No operational logging | Every assessment logs a masked execution trace; the decision record is hash-chained and verifiable | D6, D7, J9 |

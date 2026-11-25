@@ -1,0 +1,42 @@
+{
+  "name": "Yumma official-warnings round (scam types UAE authorities warned about, 2025–2026)",
+  "frozen": "2026-11-25: written from public UAE warnings and research, before any run; first-sight result recorded once, then used to fix gaps",
+  "method": "Each message is my own wording of a scam type that a UAE authority or national study warned about in 2025–2026. Names, numbers and links are invented. Ordinary messages are controls that a protective agent must not alarm on.",
+  "sources": {
+    "MOI": "UAE Ministry of Interior, via Emirates 24|7, 19 Oct 2026: elderly people are among the most targeted; AI copies a relative's voice from short audio; agree a 'golden word' before money moves",
+    "DESC": "Dubai Electronic Security Centre (Amer Sharaf), The National, 17 Sep 2026: voice cloning and deepfakes of relatives; agree safe words; double-check money requests through a trusted channel",
+    "MOJ": "Ministry of Justice legal researcher, Khaleej Times, 1 Oct 2026: schemes impersonate trusted individuals and pressure victims into financial transfers",
+    "DXBPOLICE": "Dubai Police and Ministry of Interior, March 2026: fraudsters impersonating officials to obtain UAE Pass, Emirates ID details and verification codes",
+    "MOHRE": "Ministry of Human Resources and Emiratisation, Khaleej Times, 23 Sep 2026: deepfake scams impersonating officials",
+    "CSC": "UAE Cyber Security Council, Oct 2025: fraudulent messages up 35% in a year; 'You have won' and fake-refund messages",
+    "GASA2025": "GASA and Trend Micro, State of Scams in the UAE 2025 (published 27 Jan 2026, 1,000 residents): shopping, investment and unexpected-money scams are the most common",
+    "WHATSAPP": "UAE warnings on WhatsApp account takeover through verification codes"
+  },
+  "cases": [
+    { "id": "W01", "category": "SCAM", "type": "family emergency, new number", "source": "MOI", "message": "Mama it's me, I dropped my phone in water so I'm using my friend's number for now. I'm stuck at the mall, my card isn't working and I need AED 2,500 for the rent before 6. Can you send it to this account? I'll explain later, can't talk" },
+    { "id": "W02", "category": "SCAM", "type": "cloned voice, relative in trouble", "source": "DESC", "message": "Voice note from Omar's number: Dad, I had an accident with the car, the police are here and they say I must pay AED 7,000 now or they take me in. Please transfer quickly to the officer's account, don't call Mum, she will panic" },
+    { "id": "W03", "category": "SCAM", "type": "cloned voice, relative in trouble", "source": "MOJ", "message": "Caller sounds exactly like my sister: she is at the hospital in Sharjah, they won't start treatment until a deposit of Dh 4,800 is paid, she wants me to send it right now and keep it between us" },
+    { "id": "W04", "category": "SCAM", "type": "official impersonation, credentials", "source": "DXBPOLICE", "message": "This is Dubai Police electronic services. Your Emirates ID has been flagged in a security case. To avoid suspension, log in through the link we send and read us the UAE Pass verification code" },
+    { "id": "W05", "category": "SCAM", "type": "official impersonation, credentials", "source": "DXBPOLICE", "message": "Ministry of Interior: a travel ban will be issued on your file today. Confirm your identity now by sharing the 6-digit code sent to your mobile with our officer" },
+    { "id": "W06", "category": "SCAM", "type": "official impersonation, fine", "source": "MOHRE", "message": "Video call from a man in uniform saying he is from the labour ministry: my domestic worker's contract has a violation and I must pay a fine of AED 3,000 today by bank transfer or the file will be referred to court" },
+    { "id": "W07", "category": "SCAM", "type": "account takeover code", "source": "WHATSAPP", "message": "Hi auntie, sorry I sent a 6 digit code to your number by mistake, can you forward it to me quickly please? It's urgent" },
+    { "id": "W08", "category": "SCAM", "type": "prize", "source": "CSC", "message": "Congratulations! You have won AED 50,000 in the national shopping festival draw. To receive the prize pay the processing fee of AED 250 at http://uae-prize-claim.info within 24 hours" },
+    { "id": "W09", "category": "SCAM", "type": "fake refund", "source": "CSC", "message": "Refund notice: AED 349 is waiting to be returned to your card. Confirm your card number, expiry and CVV at http://refund-ae-portal.com to receive it today" },
+    { "id": "W10", "category": "SCAM", "type": "fake bank, account blocked", "source": "CSC", "message": "Your bank account has been temporarily blocked due to unusual activity. Update your details immediately at http://secure-bank-uae.co to restore access" },
+    { "id": "W11", "category": "SCAM", "type": "safe account transfer", "source": "MOJ", "message": "Caller from the bank's fraud department says hackers are inside my account and I must move all my savings to a safe account he gives me, right now, and not tell the branch because staff may be involved" },
+    { "id": "W12", "category": "SCAM", "type": "investment", "source": "GASA2025", "message": "Exclusive offer for our VIP members: guaranteed 30% monthly returns on our crypto trading pool. Only 3 places left, deposit at least AED 5,000 today to lock your profit" },
+    { "id": "W13", "category": "SCAM", "type": "unexpected money", "source": "GASA2025", "message": "Dear beneficiary, an inheritance of USD 1.2 million has been released in your name. Pay the clearance fee of AED 1,900 by Western Union so the transfer can be completed this week" },
+    { "id": "W14", "category": "SCAM", "type": "shopping, advance payment", "source": "GASA2025", "message": "The chalet is available this weekend at half price but many people are asking. Transfer the full amount of AED 1,200 now to my personal account to book it, no viewing possible" },
+    { "id": "W15", "category": "SCAM", "type": "job fee", "source": "GASA2025", "message": "Congratulations, you are selected for the driver job in Abu Dhabi with salary AED 9,000. Pay AED 750 for your visa processing today to the HR agent's account to confirm your place" },
+    { "id": "W16", "category": "SCAM", "type": "romance, money request", "source": "MOJ", "message": "My love, I'm stuck at the airport customs with the gold I bought for you. They want USD 2,000 clearance fee, please send it now through the transfer app, I'll pay you back when I land" },
+    { "id": "W17", "category": "SCAM", "type": "family emergency, Arabic", "source": "MOI", "message": "ماما هذا رقمي الجديد، تلفوني خرب. محتاج ٣٠٠٠ درهم ضروري اليوم، حوليهم على هذا الحساب ولا تتصلي الحين" },
+    { "id": "W18", "category": "SCAM", "type": "official impersonation, Arabic", "source": "DXBPOLICE", "message": "معك شرطة دبي، هويتك مرتبطة بقضية. أرسل لنا رمز التحقق اللي وصلك الآن حتى لا يتم إيقاف حسابك" },
+    { "id": "W19", "category": "SCAM", "type": "prize, Arabic", "source": "CSC", "message": "مبروك! ربحت جائزة ٢٠٠٠٠ درهم. ادفع رسوم الاستلام ١٥٠ درهم عبر الرابط خلال ساعة" },
+    { "id": "W20", "category": "SCAM", "type": "remote access", "source": "DESC", "message": "Microsoft support here, your computer is sending viruses to the bank. Install the QuickSupport app and give me the ID so I can secure your online banking before it is hacked" },
+    { "id": "W21", "category": "BENIGN", "type": "ordinary family message", "source": "control", "message": "Hi Mum, I'll be home late tonight, don't wait for dinner. Love you" },
+    { "id": "W22", "category": "BENIGN", "type": "ordinary bank notice", "source": "control", "message": "Your salary of AED 12,400 has been credited to your account ending 3321. No action is needed." },
+    { "id": "W23", "category": "BENIGN", "type": "code I asked for", "source": "control", "message": "Your one-time password for the login you just requested is 482913. Never share this code with anyone, including bank staff." },
+    { "id": "W24", "category": "BENIGN", "type": "ordinary delivery", "source": "control", "message": "Your parcel is out for delivery today between 2 and 6 pm. The courier will call when nearby." },
+    { "id": "W25", "category": "BENIGN", "type": "ordinary question", "source": "control", "message": "Can you remind me which documents I need to renew my Emirates ID at the service centre?" }
+  ]
+}

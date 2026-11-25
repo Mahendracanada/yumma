@@ -188,6 +188,19 @@ code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;color:var(
 .composer .send .ico{width:18px;height:18px}
 #micBtn.listening{background:#4a1712;border-color:#c0604f;color:#ffd2c8}
 
+/* tester feedback */
+.feedback-card{border-color:var(--gold-1)}
+.fb-q{margin-top:8px}
+.fb-q p{margin:0 0 6px;font-size:13.5px;color:#fff;line-height:1.4}
+.fb-q.answered p{color:var(--txt-muted)}
+.fb-opts{display:flex;flex-wrap:wrap;gap:6px}
+.fb-opts button{border:1px solid var(--line-2);background:#0a2420;color:var(--txt);border-radius:14px;padding:7px 11px;font-size:12.5px;font-weight:700}
+.fb-opts button.on{background:linear-gradient(135deg,var(--gold-2),var(--gold-3));color:#1a1205;border-color:transparent}
+.fb-opts button:disabled:not(.on){opacity:.4}
+.fb-opts button.on:disabled{opacity:1;cursor:default}
+.fb-done{margin-top:10px;font-size:13px;color:var(--gold-2);line-height:1.45}
+.hood a{color:var(--gold-2)}
+
 /* promise and family screens */
 .pg-head{display:flex;align-items:center;gap:12px;margin:14px 0 12px}
 .pg-head h2{margin:0;font:400 21px/1.25 var(--serif);color:#fff}

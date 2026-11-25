@@ -31,6 +31,7 @@ const { buildProtectionPlan } = require('./protection-orchestrator');
 const { getScenarios, getScenario } = require('./demo-mode');
 const { FamilyCheckStore } = require('./family-check');
 const { Trace, DecisionLog, redact, sha256 } = require('./trace');
+const { FeedbackStore } = require('./feedback');
 
 // ---- Configuration (see .env.example). Defaults run the local, single-user demo.
 const DATA_DIR = process.env.YUMMA_DATA_DIR || path.join(__dirname, '..', 'data');
@@ -50,6 +51,7 @@ const conversationSessions = new ConversationSessions();
 const calmContractStore = new CalmContractStore(path.join(DATA_DIR, 'calm-contracts.json'));
 const memoryStore = new MemoryStore(path.join(DATA_DIR, 'memory-store.json'));
 const decisionLog = new DecisionLog(path.join(DATA_DIR, 'decision-log.jsonl'));
+const feedbackStore = new FeedbackStore(path.join(DATA_DIR, 'tester-feedback.jsonl'));
 const DEMO_PROFILE = 'salma-demo';
 
 // ---- Judge access: one link carries the access code; it becomes a signed, HttpOnly cookie.
@@ -372,6 +374,17 @@ const server = http.createServer((req, res) => {
     }
     return send(res,405,{error:'Unsupported Calm-State Contract operation.'});
   }
+  // Anonymous tester feedback: three taps, no personal details. Judges are counted separately.
+  if (req.method === 'POST' && req.url === '/api/feedback') {
+    let body = ''; req.on('data', c => { body += c; if (body.length > 2000) req.destroy(); });
+    req.on('end', () => {
+      try { const b = JSON.parse(body || '{}'); const key = req.judgeSid || (typeof b.sessionId === 'string' ? b.sessionId.slice(0, 80) : null); return send(res, 201, feedbackStore.record(b, key)); }
+      catch (e) { return send(res, e.statusCode || 400, { error: e.statusCode ? e.message : 'Invalid feedback.' }); }
+    });
+    return;
+  }
+  if (req.method === 'GET' && req.url === '/api/feedback/summary') return send(res, 200, { summary: feedbackStore.summary(), note: 'Anonymous answers from people who tried Yumma; judges are counted separately.' });
+  if (req.method === 'GET' && req.url === '/api/feedback/export.csv') return send(res, 200, feedbackStore.csv(), 'text/csv; charset=utf-8');
   if (req.method === 'GET' && req.url === '/api/decision-log/verify') {
     const v = decisionLog.verify();
     return send(res, 200, { ...v, note: 'Every decision entry carries the hash of the one before it. Changing or deleting any entry breaks the chain.' });

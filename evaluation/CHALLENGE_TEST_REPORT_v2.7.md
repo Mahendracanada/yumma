@@ -90,3 +90,22 @@ My first sets mostly described a scam ("A caller says…"). Judges and real user
 - Overall: **96 / 124 = 77.4%** correct the first time.
 
 The honest reading: the rules generalise well to scams written the way I write them, and less well to new phrasing. That is the job of the AI risk signal, which can only add caution, and of the blind test, where other people write the messages. Both results go into my submission as they come out.
+
+
+## Round 8: official warnings (25 November 2026)
+
+**Why:** to test Yumma against the scams UAE authorities are warning people about right now, not only against messages I imagined.
+
+**Set:** `challenge-official-warnings.json`, locked by SHA-256 `d66600127915e62ed5d463a7eb56a669dd894d57f72352b0598cba15dcd5a877` before the first run. 20 scam messages in my own words, each matched to a 2025–2026 public warning (Ministry of Interior, Dubai Police, Dubai Electronic Security Centre, Ministry of Justice, MoHRE, UAE Cyber Security Council, and the GASA and Trend Micro State of Scams in the UAE 2025), three of them in Gulf Arabic, plus 5 ordinary control messages. Names, numbers and links are invented.
+
+| Run | Scams warned | Paused | Verify only | Missed | False alarms |
+|---|---|---|---|---|---|
+| First sight (`results-official-warnings-first-sight.json`) | **20 / 20** | 18 | 2 | 0 | 1 of 5 |
+| After general fixes (`results-official-warnings-after-fix.json`) | **20 / 20** | 20 | 0 | 0 | 0 of 5 |
+
+**What first sight found, and the general fix for each:**
+- *Gulf Arabic family emergency* ("phone broke, new number, transfer to this account, don't call now") was only "verify": the Arabic vocabulary for transfer-to-account, phone broke, don't call and urgent was missing, and Arabic-Indic digits were not read. Added that vocabulary and digit folding.
+- *Advance payment to a stranger's personal account* (holiday chalet) was only "verify": a stranger pushing payment to "my personal account" now counts as a new payee under pressure.
+- *Ordinary delivery notice* ("out for delivery, the courier will call") raised a false alarm: delivery-status notices that ask for nothing are now treated as routine notices.
+
+**Cumulative first sight, five unseen rounds (149 messages):** 79 of 85 scams warned, 6 missed; 7 false alarms on 42 ordinary requests; 118 / 149 = 79.2% overall. All 216 messages across the seven sets pass after fixes, with no external action ever.

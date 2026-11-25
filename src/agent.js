@@ -29,6 +29,13 @@ const ARABIC_SAFETY_TERMS = [
   // Longer phrases first. Arabic has no \b word boundary, so terms are mapped to
   // spaced English tokens that the English cue rules below can recognise.
   [/تحويل(?:\s+الأموال|\s+المال)?|أرسل\s+المال|حوّل\s+المال/g, ' transfer money '],
+  // Gulf dialect: "transfer them to this account", "send it to me", "phone broke", "don't call", "urgent now".
+  [/حو[ّ]?ل(?:ي|يهم|يها|يه|وا|هم|ها)?\s+(?:على|لي|ل)|ارسل(?:ي|يهم|يها)?\s+(?:لي|على)|ابعث(?:ي|يهم|يها)?\s+(?:لي|على)/g, ' transfer money to '],
+  [/(?:على|في)\s+(?:هذا|هالـ?)\s*الحساب|رقم\s+الحساب|الآيبان|ايبان/g, ' bank account '],
+  [/(?:تلفوني|جوالي|موبايلي|هاتفي)\s+(?:خرب|انكسر|ضاع|طاح|تعطل)|(?:ضاع|خرب|انكسر)\s+(?:تلفوني|جوالي|موبايلي|هاتفي)/g, ' my phone broke '],
+  [/(?:و)?لا\s+(?:تتصل(?:ي|ين|ون|وا)?|تكلم(?:ي|ين)?ني|تدق(?:ي|ين)?)/g, ' do not call me '],
+  [/محتاج(?:ة|ين)?/g, ' need money '],
+  [/ضروري|عاجل|بسرعة|فوراً|فورا|الحين|حالاً|حالا/g, ' urgent now '],
   [/حساب\s+آمن|حساب\s+مؤمن/g, ' safe account '],
   [/رقم\s+البطاقة|بيانات\s+البطاقة|رمز\s+cvv/g, ' card number '],
   [/رمز\s+التحقق|رمز\s+الأمان|كلمة\s+المرور|رقم\s+سري|رمز\s+لمرة\s+واحدة/g, ' otp security code password '],
@@ -76,7 +83,8 @@ function unLeet(token) {
   return token.replace(/[013457@$]/g, ch => LEET[ch]);
 }
 function normalizeSafetyText(message) {
-  let normalized = String(message || '').normalize('NFKC').replace(INVISIBLE_CHARS, '').toLowerCase().replace(/[’‘]/g, "'");
+  let normalized = String(message || '').normalize('NFKC').replace(INVISIBLE_CHARS, '').toLowerCase().replace(/[’‘]/g, "'")
+    .replace(/[\u0660-\u0669]/g, d => String(d.charCodeAt(0) - 0x660)).replace(/[\u06F0-\u06F9]/g, d => String(d.charCodeAt(0) - 0x6F0));
   normalized = normalized.replace(/[а-яёіјѕԁӏα-ω]/g, ch => HOMOGLYPHS[ch] || ch);
   normalized = normalized.replace(/\b[a-z](?:[\s.\-_*•·]+[a-z]\b){2,}/g, m => m.replace(/[^a-z]/g, ''));
   normalized = normalized.replace(/[a-z0-9@$]+/g, unLeet);
@@ -104,6 +112,7 @@ const CUE_PATTERNS = Object.freeze({
   tooGoodToBeTrue: /\b(congratulations|you(?:'ve| have)? won|your number won|winner|prize|raffle|lottery|jackpot|guaranteed (?:profit|returns?|income)|guarantees? \d+ ?%|\d+ ?% (?:daily|weekly|monthly|a day|a week|a month|per day|per month|returns?|profit)|double your money|risk.?free (?:profit|returns?)|earn aed ?\d[\d,]* (?:a|per) day|package (?:with|of|containing) gold|inheritance|unclaimed (?:funds|money)|work from home.{0,40}\bearn|liking (?:youtube )?videos|congrats|lucky (?:customer|winner|draw)|you(?:'ve| have)? been selected (?:for|to)|earn (?:aed ?)?\d[\d,]* (?:a |per )?(?:day|week|weekly|daily)|rating (?:hotels|products|apps)|beneficiary of (?:usd|aed|\$)? ?[\d.,]+ ?(?:million|m)|estate of (?:a |the |my )?late|doubles?(?: in| your)|double in|withdraw (?:twice|double)|hiring .{0,40}(?:aed ?)?\d[\d,]* (?:a|per) (?:day|week|month))\b/,
   upfrontFee: /\bpay (?:only |just )?(?:aed ?\d[\d,.]* |\d[\d,.]* ?aed )(?:for )?(?:the )?(?:delivery|redelivery|shipping|customs|release|processing|registration|handling)\b|\b(?:redelivery|shipping|customs|delivery) (?:charge|charges|duty)\b|\b(?:training|security|refundable|activation|registration) deposit\b|\b(?:legal|transfer|clearance|administration|release) fees?\b|\b(?:onboarding|starter|welcome) (?:kit|pack|fee)\b|\bpay (?:the |a |an |only )?(?:small )?(?:shipping|delivery|courier|customs|clearance|release|handling|processing|registration|activation|insurance|admin(?:istration)?|unlock(?:ing)?)\b|\b(?:registration|joining|starter kit) (?:fee|amount)\b|\b(?:delivery|release|registration|processing|customs|clearance|unlock|activation|reactivation|recovery|handling|admin(?:istration)?) fee\b|\bfee (?:to|for) (?:claim|release|receive|unlock)\b|\bpay .{0,40}\b(?:first|to claim|to receive|to release|to unlock)\b|\bfirst .{0,20}\bpay\b|\bpay .{0,40}\b(?:processing|before (?:they|we|it) (?:release|send|deliver))/,
   safeAccount: /\b(safe account|secure account|secure government account|safety account|protected account|move (?:my |your |the |all )?(?:money|savings|funds) to (?:a |an |the )?(?:new|safe|secure|protected|government))\b/,
+  personalAccount: /\b(?:to |into )?(?:my|his|her|the agent'?s|the owner'?s) (?:personal|private|own) (?:bank )?account\b/,
   injection: /\b(ignore (?:all |your |the )?(?:previous |prior |above )?(?:instructions|rules|boundar(?:y|ies)|safety)|disregard (?:your|the|all)|tell (?:her|him|me|them) (?:it is|it's) safe)\b/,
   familyEmergency: new RegExp(`\\b(?:hi|hello|dear)? ?${FAMILY}\\b.{0,80}\\b(?:trouble|stuck|stranded|hospital|accident|emergency|stolen|arrested|jail|police station|dropped my phone|broke my phone|phone (?:broke|is broken|was stolen|died)|using a friend|lost my (?:phone|wallet)|new number)\\b|\\b(?:trouble|stuck|stranded|hospital|accident|emergency|stolen|arrested|new number).{0,80}\\b${FAMILY}\\b`),
   newContact: /\b(new number|new phone|new whatsapp|new sim|using (?:my )?(?:\w+'?s|a friend'?s|someone'?s) phone|different number|(?:a |my )?friend'?s (?:number|phone)|unknown number|never met|met online|online (?:girlfriend|boyfriend|friend|partner)|stranger|from a number that looks like|looks like my bank|messaged (?:me )?on (?:facebook|instagram|telegram|whatsapp|tiktok|snapchat)|on (?:telegram|instagram|tiktok)\b|dating (?:app|site))\b/,
@@ -117,7 +126,7 @@ const INCOMING = /^(?:text|sms|message|email|whatsapp|dm)\s*:|^[a-z][\w .&'-]{1,
 // Informational notices (a credit, a receipt, a bill shown in its official app, a code with a
 // "do not share" warning) are not requests. With no request for money and no HIGH pattern,
 // they are dampened rather than flagged (v2.8 generalisation round, 24 Nov 2026).
-const NOTICE = /\b(?:has|have) been (?:credited|debited|deducted|received|paid|processed|charged)\b|\b(?:credited|debited|deducted) (?:to|from)\b|\b(?:do not|don'?t|never) share (?:it|this|the code|this code|your otp|the otp)\b|\bif (?:you did not|you didn'?t|this wasn'?t you)\b|\breceipt\b|\bview (?:it|your bill|the bill|details|your statement) (?:in|on)\b|\bi (?:paid|sent|transferred)\b[^?]*\b(?:today|yesterday|already|this morning)\b|\b(?:was|were|has been) (?:spent|charged|used|recharged|topped up|renewed)\b|^i (?:just |already )?(?:paid|sent|transferred)\b|\bnot you\?|\bcall the number on (?:the back of )?your card\b|\bsuccessfully\b/;
+const NOTICE = /\b(?:has|have) been (?:credited|debited|deducted|received|paid|processed|charged)\b|\b(?:credited|debited|deducted) (?:to|from)\b|\b(?:do not|don'?t|never) share (?:it|this|the code|this code|your otp|the otp)\b|\bif (?:you did not|you didn'?t|this wasn'?t you)\b|\breceipt\b|\bview (?:it|your bill|the bill|details|your statement) (?:in|on)\b|\bi (?:paid|sent|transferred)\b[^?]*\b(?:today|yesterday|already|this morning)\b|\b(?:was|were|has been) (?:spent|charged|used|recharged|topped up|renewed)\b|^i (?:just |already )?(?:paid|sent|transferred)\b|\bnot you\?|\bcall the number on (?:the back of )?your card\b|\bsuccessfully\b|\bout for delivery\b|\b(?:has been|was) (?:dispatched|shipped|delivered)\b|\bwill (?:call|contact you) when (?:nearby|close|arriving)\b/;
 const OFFICIAL_APP = /\b(?:through|via|in|on|using|from) (?:the |your )?(?:[a-z0-9&]+ ){0,2}(?:app|portal|website|branch)\b/;
 // A code delivered by the service itself, with its own "do not share" warning and no one asking for it.
 const CODE_DELIVERY = /\b(?:otp|code|password|pin)\b[^.]{0,40}\bis:?\s*\d{4,8}\b/;
@@ -229,7 +238,7 @@ const SCAM_PATTERNS = Object.freeze([
   { id: 'phishing_payment_link', level: 'HIGH', reason: 'Payment, card details or an account “fix” requested through an unverified link',
     test: (c, x) => x.thirdParty && c.linkPressure && (((c.transfer || c.upfrontFee || c.credential) && (c.impersonation || c.threat || c.urgency || c.tooGoodToBeTrue)) || (c.threat && (c.urgency || c.impersonation))) },
   { id: 'urgent_new_payee', level: 'HIGH', reason: 'Payment to a new or changed beneficiary that someone else is pushing',
-    test: (c, x) => c.payeeChange && c.transfer && (c.urgency || c.secrecy || x.thirdParty) },
+    test: (c, x) => (c.payeeChange && c.transfer && (c.urgency || c.secrecy || x.thirdParty)) || (x.thirdParty && c.personalAccount && c.transfer && (c.urgency || c.secrecy)) },
   { id: 'third_party_money_request', level: 'MEDIUM', reason: 'Someone else is asking you to pay or move money',
     test: (c, x) => x.thirdParty && c.transfer && !x.officialOrRoutine },
   { id: 'payee_change', level: 'MEDIUM', reason: 'Bank or payee details have been changed',

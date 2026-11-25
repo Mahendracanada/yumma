@@ -9,6 +9,10 @@ services:
     buildCommand: npm run integrity && npm run check
     startCommand: node src/server.js
     healthCheckPath: /api/health
+    disk:                    # keeps tester feedback and the decision record across restarts (1 GB)
+      name: yumma-data
+      mountPath: /var/data
+      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: "22"
@@ -16,6 +20,8 @@ services:
         value: "on"
       - key: YUMMA_AI_DAILY_CAP
         value: "2000"
+      - key: YUMMA_DATA_DIR
+        value: /var/data
       - key: JUDGE_ACCESS_CODE   # 16+ letters and digits, chosen by me
         sync: false
       - key: ANTHROPIC_API_KEY   # my key, with a monthly spend limit set in the Anthropic Console

@@ -67,8 +67,8 @@ const args = process.argv.slice(2);
   const out = { label: args.includes('--label') ? args[args.indexOf('--label') + 1] : (advisor ? 'ai-run' : 'run'), runAt: new Date().toISOString(),
     aiProvider: advisor ? advisor.provider : 'none',
     tuning: await runSet('challenge-tuning.json', advisor), tuning2: await runSet('challenge-tuning2.json', advisor), holdout: await runSet('challenge-holdout.json', advisor),
-    fresh: await runSet('challenge-fresh.json', advisor), fresh2: await runSet('challenge-fresh2.json', advisor), fresh3: await runSet('challenge-fresh3.json', advisor) };
-  for (const k of ['tuning', 'tuning2', 'holdout', 'fresh', 'fresh2', 'fresh3']) {
+    fresh: await runSet('challenge-fresh.json', advisor), fresh2: await runSet('challenge-fresh2.json', advisor), fresh3: await runSet('challenge-fresh3.json', advisor), officialWarnings: await runSet('challenge-official-warnings.json', advisor) };
+  for (const k of ['tuning', 'tuning2', 'holdout', 'fresh', 'fresh2', 'fresh3', 'officialWarnings']) {
     const s = out[k].summary;
     console.log(`\n== ${out[k].name}`);
     for (const r of out[k].rows) console.log(`${r.id.padEnd(4)} ${r.category.padEnd(9)} ${r.posture.padEnd(18)} ${String(r.score).padStart(3)}  ${r.result.padEnd(11)} ${r.ai ? ('AI ' + (r.ai.level || r.ai.status) + (r.ai.raised ? ' (raised)' : '')).padEnd(22) : ''}${r.type}`);

@@ -313,8 +313,8 @@ async function ask(message, { forwarded = false, from = '' } = {}) {
   const a = p.assessment; const posture = a.protectionPlan?.posture || 'INFORMATIONAL';
   const pressured = !p.isFollowUp && (posture === 'PAUSE_AND_PROTECT' || posture === 'VERIFY');
   if (!p.isFollowUp) countCheck();
-  if (pressured) { await intervene(p, gen); if (gen !== askGen) return; renderCards(p); setSuggestions(['Why is this risky?', 'What should I do now?', 'Is it safe to send?']); }
-  else { const text = p.conversation?.explanation || a.response; const row = addYumma(text); setSuggestions(p.isFollowUp ? ['What should I do now?'] : []); await speakInChat(text, row); }
+  if (pressured) { await intervene(p, gen); if (gen !== askGen) return; renderCards(p); setSuggestions(['Why is this risky?', 'What should I do now?', 'Is it safe to send?']); if (!(a.familyCheck?.applies && a.familyCheck.questions?.length)) setTimeout(offerFeedback, 1500); }
+  else { const text = p.conversation?.explanation || a.response; const row = addYumma(text); setSuggestions(p.isFollowUp ? ['What should I do now?'] : []); await speakInChat(text, row); if (!p.isFollowUp && gen === askGen) offerFeedback(); }
 }
 
 // ---------------------------------------------------------------- the intervention: Yumma appears, speaks, plays the promise back
@@ -404,7 +404,50 @@ async function checkFamily(id, answer, out) {
     out.innerHTML = `<span class="fr-badge">${d.result === 'MATCH' ? '✓' : d.result === 'LOCKED' ? '⏸' : '✗'}</span><span>${cut > 0 ? `<b>${escapeHtml(g.slice(0, cut))}</b>${escapeHtml(g.slice(cut))}` : escapeHtml(g)}</span>`;
     scrollChat();
     await speakInChat(g, null);
+    offerFeedback();
   } catch (e) { out.className = 'family-result'; out.textContent = 'Could not check the answer: ' + e.message; }
+}
+
+// ---------------------------------------------------------------- anonymous tester feedback: three taps, once per session
+const FEEDBACK_QS = [
+  ['who', 'Who are you?', [['carer', 'I look after a parent'], ['older', 'I’m 60 or older'], ['banking', 'I work in banking or fraud'], ['judge', 'I’m a judge or reviewer'], ['other', 'Someone else']]],
+  ['helped', 'Would Yumma have helped someone you know?', [['yes', 'Yes'], ['maybe', 'Maybe'], ['no', 'No']]],
+  ['pay', 'Core protection is free. Would your family add AED 5 a month for extra family features?', [['yes', 'Yes'], ['maybe', 'Maybe'], ['no', 'No']]]
+];
+let feedbackOffered = false; try { feedbackOffered = sessionStorage.getItem('yumma-feedback') === '1'; } catch {}
+function offerFeedback() {
+  if (feedbackOffered) return; feedbackOffered = true; try { sessionStorage.setItem('yumma-feedback', '1'); } catch {}
+  const qs = FEEDBACK_QS.map(([id, q, opts], i) => `<div class="fb-q" data-q="${id}"${i ? ' hidden' : ''}><p>${escapeHtml(q)}</p><div class="fb-opts">${opts.map(([v, label]) => `<button type="button" data-v="${v}">${escapeHtml(label)}</button>`).join('')}</div></div>`).join('');
+  const row = addCard(`<div class="card feedback-card"><div class="card-head">${medal('heart', 'sm')}<div><strong>HELP ME IMPROVE YUMMA</strong><small>Three taps · anonymous · no names or numbers</small></div></div>${qs}<div class="fb-done" hidden></div></div>`);
+  const answers = {};
+  row.addEventListener('click', async e => {
+    const btn = e.target.closest('.fb-opts button'); if (!btn) return;
+    const q = btn.closest('.fb-q'); answers[q.dataset.q] = btn.dataset.v;
+    q.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn)); q.classList.add('answered');
+    const next = q.nextElementSibling;
+    if (next && next.classList.contains('fb-q')) { next.hidden = false; scrollChat(); return; }
+    const done = row.querySelector('.fb-done');
+    try {
+      const d = await postJSON('/api/feedback', { ...answers, sessionId });
+      const sm = d.summary || {};
+      done.textContent = answers.who === 'judge'
+        ? 'Thank you. Judges’ answers are counted separately from real testers.'
+        : `Thank you. ${sm.testers ? `So far ${sm.testers} ${sm.testers === 1 ? 'person has' : 'people have'} tried Yumma; ${sm.wouldHelpPct}% say it would help someone they know.` : ''}`;
+      done.hidden = false; row.querySelectorAll('.fb-opts button').forEach(b => { b.disabled = true; });
+      scrollChat(); loadTesterResults();
+      speakInChat('Thank you. That helps me protect more families.', null);
+    } catch (err) { done.textContent = 'Could not save your answer: ' + err.message; done.hidden = false; }
+  });
+  setTimeout(() => scrollChat(), 200);
+}
+async function loadTesterResults() {
+  try {
+    const sm = (await (await fetch('/api/feedback/summary')).json()).summary;
+    const box = $('#testerResults');
+    if (!sm || sm.testers < 10) { box.hidden = true; return; }
+    $('#testerStats').innerHTML = `<div class="g"><small>Real people who tried Yumma</small><b>${sm.testers}</b></div><div class="g"><small>Say it would help someone they know</small><b>${sm.wouldHelpPct}%</b></div><div class="g"><small>Look after a parent, or are 60+</small><b>${sm.who.carer + sm.who.older}</b></div><div class="g neutral"><small>Would add AED 5 a month (yes or maybe)</small><b>${sm.wouldPayPct}%</b></div>`;
+    box.hidden = false;
+  } catch {}
 }
 
 // ---------------------------------------------------------------- incoming messages (notifications on Salma's phone)
@@ -509,7 +552,7 @@ $('#hoodClose').addEventListener('click', () => $('#hood').classList.remove('ope
 // ---------------------------------------------------------------- start-up
 addYumma(`${greeting}, Salma. Forward me any message or call that feels rushed, and I’ll check it with you. You always decide.`);
 $('#chatBadge').hidden = true;
-loadPromise(); loadFamily(); loadPresets();
+loadPromise(); loadFamily(); loadPresets(); loadTesterResults();
 (async () => {
   try { const h = await (await fetch('/api/health')).json(); Hood.guarantees(null, h); } catch { Hood.guarantees(null, null); }
   try { const d = await (await fetch('/api/session')).json(); if (d.judgeMode) { $('#modeTag').textContent = 'SYNTHETIC JUDGE DEMO'; $('#judgeNote').hidden = false; } } catch {}

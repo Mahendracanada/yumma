@@ -10,7 +10,7 @@ const required = [
   'evaluation/run-challenge.js', 'evaluation/challenge-tuning.json', 'evaluation/challenge-holdout.json',
   'evaluation/challenge-fresh.json', 'evaluation/challenge-tuning2.json', 'evaluation/challenge-fresh2.json', 'evaluation/challenge-fresh3.json',
   'evaluation/run-blind.js', 'test/family-check.test.js',
-  'src/trace.js', 'evaluation/run-redteam.js'
+  'src/trace.js', 'src/feedback.js', 'evaluation/run-redteam.js'
 ];
 const missing = required.filter(file => !fs.existsSync(path.join(__dirname, '..', file)));
 if (missing.length) {

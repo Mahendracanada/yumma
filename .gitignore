@@ -6,6 +6,7 @@ node_modules/
 data/*.json
 !data/salma-profile.json
 data/decision-log.jsonl
+data/tester-feedback.jsonl
 evaluation/results-ai-run.json
 # Blind-test responses and runs stay local until I choose to publish them
 evaluation/blind/*.csv

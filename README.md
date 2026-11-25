@@ -11,7 +11,7 @@ Yumma protects a family the way a mother does. While calm, a person records a pr
 **Run it yourself** (Node.js 20 or later; there are no packages to install):
 
 ```bash
-npm run verify   # integrity, syntax, 86 tests, 5 judge scenarios, 191 challenge messages, 59 red-team attacks, smoke test
+npm run verify   # integrity, syntax, 87 tests, 5 judge scenarios, 216 challenge messages, 59 red-team attacks, smoke test
 npm start        # http://127.0.0.1:4173
 ```
 
@@ -54,12 +54,12 @@ Every assessment produces an **execution trace** (shown in the app, downloadable
 
 | Command | What it shows |
 |---|---|
-| `npm run verify` | 86/86 tests, 5/5 judge scenarios, 191/191 challenge messages, 59/59 red-team attacks contained, smoke PASS |
-| `npm run challenge` | 191 synthetic UAE messages in six sets. First time seen (124 messages over four unseen rounds): 59 of 65 scams warned, 6 missed; 6 false alarms on 37 ordinary requests; 77.4% overall. All 191 pass after fixes. See `evaluation/CHALLENGE_TEST_REPORT_v2.7.md` |
+| `npm run verify` | 87/87 tests, 5/5 judge scenarios, 216/216 challenge messages, 59/59 red-team attacks contained, smoke PASS |
+| `npm run challenge` | 216 synthetic UAE messages in seven sets, including an official-warnings round of 20 scam types that UAE authorities warned about in 2025–2026. First time seen (149 messages over five unseen rounds): 79 of 85 scams warned, 6 missed; 7 false alarms on 42 ordinary requests; 79.2% overall. All 216 pass after fixes. See `evaluation/CHALLENGE_TEST_REPORT_v2.7.md` |
 | `npm run redteam` | 59 attacks on evasion, prompt injection, AI manipulation, voice spoofing, data protection, access control and error handling. Results in `evaluation/redteam-results.json` |
 | `npm run blind -- file.csv` | Messages written by other people, run once; refuses to rerun the same file as first sight. See `evaluation/BLIND_TEST_KIT.md` |
 | `npm run benchmark` | 10 scenarios: expected vs actual, first-sight result, latency (about 0.03 ms per message for the rules). Add `--ai` with a key to time the AI call |
-| `npm run challenge:ai` | All 191 messages with the live AI signal, using my key on my machine. Saves `evaluation/results-ai-run.json` |
+| `npm run challenge:ai` | All 216 messages with the live AI signal, using my key on my machine. Saves `evaluation/results-ai-run.json` |
 | `npm run ai-gap` | Every message the rules got wrong the first time they saw it, sent to the AI signal alone: how many it would have caught. `RUN_AI_TEST.command` runs this, the AI challenge run and the AI benchmark in one go, asking for the key without saving it |
 
 ## Hosting the judge build
@@ -68,6 +68,6 @@ Every assessment produces an **execution trace** (shown in the app, downloadable
 
 ## Scope
 
-Yumma runs on synthetic data. Live bank, payment, messaging and wallet connections, production identity, encrypted storage and an independent security assessment come with the production path. The tests are engineering evidence; real-world fraud-prevention accuracy comes from a supervised pilot.
+Yumma runs on synthetic data. The only real input it takes is optional, anonymous three-tap feedback from people who try it (who they are, whether it would help, whether their family would pay), with no names, numbers or free text; judges' answers are counted separately. Live bank, payment, messaging and wallet connections, production identity, encrypted storage and an independent security assessment come with the production path. The tests are engineering evidence; real-world fraud-prevention accuracy comes from a supervised pilot.
 
 Superseded design notes and earlier evidence are kept in `docs/archive/` for audit trail. Copyright © 2026 Mahendra Dhillon; see [LICENSE](LICENSE).

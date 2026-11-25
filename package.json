@@ -15,6 +15,7 @@
     "verify": "npm run integrity && npm run check && npm test && npm run evaluate && npm run challenge && npm run redteam && npm run smoke",
     "integrity": "node scripts/check-source-integrity.js",
     "challenge": "node evaluation/run-challenge.js",
+    "warnings": "node evaluation/run-official-warnings.js",
     "challenge:ai": "node evaluation/run-challenge.js --ai --json evaluation/results-ai-run.json",
     "redteam": "node evaluation/run-redteam.js",
     "benchmark": "node evaluation/run-benchmark.js",

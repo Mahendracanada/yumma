@@ -33,7 +33,7 @@ test('HTTP integration: local judge journey, safeguards and error handling', asy
   const base = `http://127.0.0.1:${port}`;
   const child = spawn(process.execPath, [path.join(__dirname, '..', 'src', 'server.js')], {
     cwd: path.join(__dirname, '..'),
-    env: { ...process.env, PORT: String(port) },
+    env: { ...process.env, PORT: String(port), YUMMA_DATA_DIR: require('fs').mkdtempSync(path.join(require('os').tmpdir(), 'yumma-http-')) },
     stdio: 'ignore'
   });
   t.after(() => { if (child.exitCode === null) child.kill('SIGTERM'); });
@@ -156,4 +156,18 @@ test('HTTP integration: local judge journey, safeguards and error handling', asy
   const fresh = await chat('What time does the bank open on Saturday, and is it open on public holidays?', first.sessionId);
   assert.equal(fresh.isFollowUp, false);
   assert.notEqual(fresh.assessment.protectionPlan.posture, 'PAUSE_AND_PROTECT');
+
+  // Anonymous tester feedback: fixed choices only, one answer per session, judges counted separately.
+  const fb = (body) => fetch(`${base}/api/feedback`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  const before = (await (await fetch(`${base}/api/feedback/summary`)).json()).summary.testers;
+  assert.equal((await fb({ who: 'carer', helped: 'yes', pay: 'maybe', sessionId: 'tester-session-1' })).status, 201);
+  const again = await (await fb({ who: 'carer', helped: 'no', pay: 'no', sessionId: 'tester-session-1' })).json();
+  assert.equal(again.duplicate, true);
+  assert.equal((await fb({ who: 'judge', helped: 'yes', pay: 'yes', sessionId: 'judge-session-1' })).status, 201);
+  assert.equal((await fb({ who: 'my name is Salma', helped: 'yes', pay: 'yes', sessionId: 'tester-session-2' })).status, 400);
+  const sum = (await (await fetch(`${base}/api/feedback/summary`)).json()).summary;
+  assert.equal(sum.testers, before + 1);
+  const csv = await (await fetch(`${base}/api/feedback/export.csv`)).text();
+  assert.match(csv, /^day,who,helped,pay\n/);
+  assert.doesNotMatch(csv, /tester-session/);
 });
