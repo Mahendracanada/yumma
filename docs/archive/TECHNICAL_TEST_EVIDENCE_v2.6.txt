@@ -1,0 +1,15 @@
+Yumma v2.6 technical test evidence
+Date: 2026-11-19
+Environment: Node.js v22.16.0
+Command: npm run verify
+
+Source integrity: PASS (17 required files present)
+Syntax checks: PASS
+Automated suite: 64 passed, 0 failed, 0 skipped
+Scenario evaluation: 4/4 passed
+Local HTTP smoke test: PASS
+HTTP integration: PASS
+
+HTTP integration assertions include health/version mode, CSP header, local-demo readiness, production readiness false, Android verification false, four scenarios listed, expected protective posture, no authorization, no external action, unknown scenario 404, invalid assessment 400, missing memory consent 403, and browser root 200.
+
+Limitations: synthetic local test only; no live model provider configured in this run; no production identity/authentication, no independent penetration test, no Android build/device verification, no external financial integrations, no real-user pilot.

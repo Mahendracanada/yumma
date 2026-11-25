@@ -1,0 +1,30 @@
+{
+  "name": "Yumma fresh post-fix check (run once)",
+  "frozen": "2026-11-24 — written after round-2 fixes, run exactly once, never tuned",
+  "cases": [
+    {"id":"F01","category":"SCAM","type":"bank card cloning call","message":"A lady from the bank's card security department called and said my card was cloned, she needs the PIN to cancel it"},
+    {"id":"F02","category":"SCAM","type":"fake Salik/RTA","message":"SMS from RTA: Your Salik account has an outstanding balance of AED 45. Avoid a penalty by paying at rta-salik.top"},
+    {"id":"F03","category":"SCAM","type":"lottery processing","message":"I received an email saying I won the Emirates Draw but I need to pay AED 1,200 processing before they release the winnings"},
+    {"id":"F04","category":"SCAM","type":"forex group","message":"A forex mentor in a WhatsApp group promises 40% weekly profit if I deposit through his broker"},
+    {"id":"F05","category":"SCAM","type":"daughter new phone","message":"Dad it's me, my phone broke so I'm using a friend's number. I need AED 4,000 urgently for my rent, please don't call Mum about it"},
+    {"id":"F06","category":"SCAM","type":"tech support","message":"A Microsoft technician called saying my computer has a virus and asked me to download TeamViewer"},
+    {"id":"F07","category":"SCAM","type":"arrest threat","message":"Someone from the Public Prosecution says there is a case against me and I will be arrested unless I pay a settlement today"},
+    {"id":"F08","category":"SCAM","type":"Arabic bank update","message":"اتصل بي موظف من البنك وقال إن حسابي سيتم إيقافه ويجب أن أعطيه كلمة المرور"},
+    {"id":"F09","category":"SCAM","type":"crypto romance","message":"A man I met on a dating app showed me his crypto profits and wants me to invest AED 15,000 on his platform"},
+    {"id":"F10","category":"SCAM","type":"employment visa fee","message":"A recruitment agency offered me a job in Abu Dhabi but asks me to pay AED 2,500 visa processing fee first"},
+    {"id":"F11","category":"SCAM","type":"QR parking","message":"A text says my parking fine is unpaid and I must scan the QR code and enter my card details now"},
+    {"id":"F12","category":"SCAM","type":"bank security move funds","message":"The bank's security officer told me to move all my savings to a new protected account while they investigate"},
+    {"id":"F13","category":"AMBIGUOUS","type":"landlord new IBAN","message":"My landlord sent a WhatsApp with a new IBAN for this month's rent"},
+    {"id":"F14","category":"AMBIGUOUS","type":"charity collection","message":"A man at the door is collecting donations for flood victims and wants cash"},
+    {"id":"F15","category":"AMBIGUOUS","type":"unknown caller passport","message":"Someone called from an unknown number asking for a copy of my passport for a delivery"},
+    {"id":"F16","category":"AMBIGUOUS","type":"friend borrow via new account","message":"My friend texted asking me to send AED 700 to her colleague's account because her card isn't working"},
+    {"id":"F17","category":"BENIGN","type":"pension question","message":"How does the end of service gratuity work in the UAE?"},
+    {"id":"F18","category":"BENIGN","type":"self payment","message":"I just paid my credit card bill in my bank's app"},
+    {"id":"F19","category":"BENIGN","type":"gift for son","message":"I want to buy my son a gift card for his birthday next week"},
+    {"id":"F20","category":"BENIGN","type":"exchange rate","message":"What is the AED to INR exchange rate usually like?"},
+    {"id":"F21","category":"BENIGN","type":"medication reminder","message":"Please remind me to take my evening tablets at 8"},
+    {"id":"F22","category":"BENIGN","type":"Arabic savings","message":"كيف أبدأ بالادخار لتعليم أطفالي؟"},
+    {"id":"F23","category":"BENIGN","type":"helping mum","message":"My mum needs help understanding her bank statement"},
+    {"id":"F24","category":"BENIGN","type":"rent planning","message":"I need to transfer my rent on the 1st, can you remind me?"}
+  ]
+}

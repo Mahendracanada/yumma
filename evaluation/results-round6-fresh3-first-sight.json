@@ -1,0 +1,537 @@
+{
+  "kind": "first-sight",
+  "runAt": "2026-11-24T12:41:56.547Z",
+  "version": "2.8.0",
+  "fileSha256": "b662041be1e8bbba3abe0401cc741309e7636fc506a936b7bb453db44e2f1006",
+  "aiProvider": "none",
+  "summary": {
+    "total": 30,
+    "contributors": 1,
+    "scams": {
+      "n": 15,
+      "protected": 9,
+      "verifyOnly": 4,
+      "missed": 2
+    },
+    "ambiguous": {
+      "n": 6,
+      "pass": 5
+    },
+    "benign": {
+      "n": 9,
+      "pass": 7,
+      "falseAlarms": 2
+    },
+    "overallCorrect": 21,
+    "actedOnItsOwn": 0,
+    "overallPct": 70,
+    "scamsWarnedPct": 86.7
+  },
+  "skipped": [],
+  "results": [
+    {
+      "id": "B001",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 80,
+      "patterns": [
+        "credential_request",
+        "impersonation_pressure",
+        "phishing_payment_link"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "fc73f06f5c9485db",
+      "message": "Mashreq: Your debit card will expire today. To avoid interruption, reactivate it here http://mashreq-reactivate.top and confirm your PIN",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B002",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 80,
+      "patterns": [
+        "credential_request",
+        "impersonation_pressure",
+        "threat_from_institution"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "d13aad7976c55082",
+      "message": "Hello Mrs Salma, I'm calling from Etisalat technical team, your internet will be cut tonight. I need the code you will receive by SMS to fix it",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B003",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 45,
+      "patterns": [
+        "family_emergency"
+      ],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "f4f2082c9215109f",
+      "message": "Brother I'm in big trouble at the airport, they took my passport, send 3000 to this account fast, don't call I can't talk",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B004",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "prize_or_guaranteed_return",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "8a1a9407f858c308",
+      "message": "Hi dear, I found your number on LinkedIn. I'm an investment advisor with a 25% monthly return plan approved by the central bank. Start with AED 5,000",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B005",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 85,
+      "patterns": [
+        "credential_request",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "ab7fdc9780c1b26f",
+      "message": "Smart Dubai: your UAE PASS will be suspended. Verify your identity now by sharing your Emirates ID photo and OTP",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B006",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "2ab84c6d3573587d",
+      "message": "Thank you for your Netflix payment of AED 299. If you did not authorise this, call our refund desk at +44 7700 900123 and install the support app",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B007",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "third_party_money_request",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "c6f99d2505b8381b",
+      "message": "I accidentally sent AED 2,000 to your account, please send it back to my new account, here is the IBAN. Hurry, it's for my rent",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B008",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "secrecy_with_money",
+        "third_party_money_request",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "24a7e03a39db38b2",
+      "message": "Your Emirates ID is linked to a drug trafficking case. A prosecutor will call you. Do not inform your family. Transfer your funds for verification",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B009",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 45,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "ab1fa80b7941b6a0",
+      "message": "Last chance! Bitcoin doubles in 48 hours with our exchange. Deposit any amount and withdraw twice tomorrow",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B010",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "efe7395dfcd877a2",
+      "message": "Ma it's Adam, I'm using Ali's phone, mine was stolen. Can you buy 2 Amazon gift cards for my exam fee and send pictures of the cards?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B011",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "7112b019b73db729",
+      "message": "Etihad Rewards: You have 85,000 miles expiring today. Redeem now at etihad-miles-redeem.com with your card",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B012",
+      "contributor": "F3",
+      "language": "Arabic",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "prize_or_guaranteed_return",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "8bf6a38f2efcb5b1",
+      "message": "تهانينا، تم اختيار رقمك للفوز بسيارة، ادفع رسوم التسجيل 500 درهم لاستلام الجائزة",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B013",
+      "contributor": "F3",
+      "language": "Arabic",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "credential_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "91660d693d8a0b93",
+      "message": "معك موظف البنك، نحتاج رقم البطاقة والرمز المرسل لهاتفك لتأمين حسابك",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B014",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "3a20a30f0ab968d2",
+      "message": "Hey, my company is hiring remote assistants, 2 hours a day, AED 4,000 a month. Just pay AED 199 for the onboarding kit",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B015",
+      "contributor": "F3",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 100,
+      "patterns": [
+        "family_emergency_money",
+        "secrecy_with_money",
+        "impersonation_pressure",
+        "third_party_money_request",
+        "family_emergency",
+        "threat_from_institution"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "58def8a36638238e",
+      "message": "Police notice: your son was arrested after an accident. Pay bail of AED 10,000 now to avoid jail, keep this confidential",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B016",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 29,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "7a536527abe93636",
+      "message": "Your Amazon refund of AED 120 has been processed to your original payment method.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B017",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "e7b5ec95d490a43c",
+      "message": "Please remind me to transfer the rent to my landlord on the 1st, same account as always",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B018",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 10,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "d9b2766c06203746",
+      "message": "Emirates NBD: Your new debit card has been dispatched and will reach you in 3 working days.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B019",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "dfa56f37d1d46457",
+      "message": "Is it safe to pay school fees with a credit card through the school's official portal?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B020",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "c66320de04e33f57",
+      "message": "I just transferred AED 500 to my daughter for her trip, she asked me last week",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B021",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 0,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "d69f867e5822aabc",
+      "message": "Your appointment at Dubai Hospital is confirmed for 3 December at 10:00 am.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B022",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "credential_request"
+      ],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "b60437e56d55342f",
+      "message": "Your one-time password for the RAKBANK app is 772104. RAKBANK will never ask for your OTP.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B023",
+      "contributor": "F3",
+      "language": "Arabic",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "4b93ebb1dd876fa0",
+      "message": "تم دفع فاتورة الكهرباء بنجاح بقيمة 350 درهم",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B024",
+      "contributor": "F3",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 10,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "97f84e54ad0f7009",
+      "message": "How do I report a suspicious WhatsApp message to the police in Dubai?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B025",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 45,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "047644c3cc4d6ed7",
+      "message": "My son says he needs AED 2,500 for a laptop for university, he's asking me to send it today",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B026",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "8efbc9bb31ba6f87",
+      "message": "A man selling his car on Dubizzle wants a AED 2,000 deposit before I see the car",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B027",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "d7c7e45330430d18",
+      "message": "Hi Dad, can you send me 300 for books? I'll show you the receipt later",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B028",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "e367f3e0971bdfce",
+      "message": "My employer's finance team emailed asking me to update my IBAN for salary via a form link",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B029",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "09da7d02897a21ae",
+      "message": "A friend wants me to invest in his gold trading business, he promises the money back in 3 months",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B030",
+      "contributor": "F3",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "576aa13b17c4f5c7",
+      "message": "The plumber wants the full AED 1,800 paid upfront before starting the work",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    }
+  ],
+  "note": "First-sight run of the CSV this set was built from (same messages, same order), before any fix for these messages."
+}

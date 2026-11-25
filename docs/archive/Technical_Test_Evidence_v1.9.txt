@@ -1,0 +1,18 @@
+Yumma v1.9 verification
+
+Automated tests: 50 passed, 0 failed, 0 skipped.
+Command: npm test
+
+Syntax checks: passed.
+Command: npm run check
+
+Focused Arabic checks:
+- Arabic urgent transfer -> HIGH / PAUSE_AND_PROTECT.
+- Arabic OTP request -> share_credentials / HIGH / PAUSE_AND_PROTECT.
+- Arabic ordinary banking question -> LOW / INFORMATIONAL.
+- All tested outcomes explicitly retained authorization=false and externalActionTaken=false.
+
+Limitations:
+- Arabic support is a limited phrase lexicon, not comprehensive translation or dialect understanding.
+- No human accessibility study or assistive-technology certification has been performed.
+- Synthetic tests do not establish real-world fraud detection accuracy.

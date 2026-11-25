@@ -1,0 +1,7 @@
+Yumma v2.0 technical evidence
+- Node.js runtime: 22.x
+- `npm test`: includes server integration test for security headers and readiness declaration.
+- `npm run check`: JavaScript syntax validation.
+- Security headers: X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, Cross-Origin-Resource-Policy.
+- API rate limit: 120 requests per IP per 60-second in-memory window.
+- Production readiness remains false.

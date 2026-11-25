@@ -1,0 +1,14 @@
+{
+  "id": "salma-demo",
+  "profileType": "synthetic_demo",
+  "preferences": [
+    "plain language",
+    "time to think",
+    "independent verification"
+  ],
+  "trustedChannels": [
+    "the phone number printed on your bank card",
+    "your bank's official mobile app or website"
+  ],
+  "calmStateContracts": []
+}

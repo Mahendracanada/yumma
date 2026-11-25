@@ -1,0 +1,186 @@
+{
+  "name": "Yumma fresh round 3 (raw pasted messages, run once before fixes)",
+  "frozen": "2026-11-24: written after round-2 fixes, first-sight result recorded, then used to fix gaps",
+  "cases": [
+    {
+      "id": "K01",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "Mashreq: Your debit card will expire today. To avoid interruption, reactivate it here http://mashreq-reactivate.top and confirm your PIN"
+    },
+    {
+      "id": "K02",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "Hello Mrs Salma, I'm calling from Etisalat technical team, your internet will be cut tonight. I need the code you will receive by SMS to fix it"
+    },
+    {
+      "id": "K03",
+      "category": "SCAM",
+      "type": "family impersonation",
+      "message": "Brother I'm in big trouble at the airport, they took my passport, send 3000 to this account fast, don't call I can't talk"
+    },
+    {
+      "id": "K04",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "Hi dear, I found your number on LinkedIn. I'm an investment advisor with a 25% monthly return plan approved by the central bank. Start with AED 5,000"
+    },
+    {
+      "id": "K05",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "Smart Dubai: your UAE PASS will be suspended. Verify your identity now by sharing your Emirates ID photo and OTP"
+    },
+    {
+      "id": "K06",
+      "category": "SCAM",
+      "type": "device takeover",
+      "message": "Thank you for your Netflix payment of AED 299. If you did not authorise this, call our refund desk at +44 7700 900123 and install the support app"
+    },
+    {
+      "id": "K07",
+      "category": "SCAM",
+      "type": "payee change",
+      "message": "I accidentally sent AED 2,000 to your account, please send it back to my new account, here is the IBAN. Hurry, it's for my rent"
+    },
+    {
+      "id": "K08",
+      "category": "SCAM",
+      "type": "authority threat",
+      "message": "Your Emirates ID is linked to a drug trafficking case. A prosecutor will call you. Do not inform your family. Transfer your funds for verification"
+    },
+    {
+      "id": "K09",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "Last chance! Bitcoin doubles in 48 hours with our exchange. Deposit any amount and withdraw twice tomorrow"
+    },
+    {
+      "id": "K10",
+      "category": "SCAM",
+      "type": "gift cards",
+      "message": "Ma it's Adam, I'm using Ali's phone, mine was stolen. Can you buy 2 Amazon gift cards for my exam fee and send pictures of the cards?"
+    },
+    {
+      "id": "K11",
+      "category": "SCAM",
+      "type": "phishing link",
+      "message": "Etihad Rewards: You have 85,000 miles expiring today. Redeem now at etihad-miles-redeem.com with your card"
+    },
+    {
+      "id": "K12",
+      "category": "SCAM",
+      "type": "prize or advance fee",
+      "message": "تهانينا، تم اختيار رقمك للفوز بسيارة، ادفع رسوم التسجيل 500 درهم لاستلام الجائزة"
+    },
+    {
+      "id": "K13",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "معك موظف البنك، نحتاج رقم البطاقة والرمز المرسل لهاتفك لتأمين حسابك"
+    },
+    {
+      "id": "K14",
+      "category": "SCAM",
+      "type": "job or task fee",
+      "message": "Hey, my company is hiring remote assistants, 2 hours a day, AED 4,000 a month. Just pay AED 199 for the onboarding kit"
+    },
+    {
+      "id": "K15",
+      "category": "SCAM",
+      "type": "authority threat",
+      "message": "Police notice: your son was arrested after an accident. Pay bail of AED 10,000 now to avoid jail, keep this confidential"
+    },
+    {
+      "id": "K16",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your Amazon refund of AED 120 has been processed to your original payment method."
+    },
+    {
+      "id": "K17",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Please remind me to transfer the rent to my landlord on the 1st, same account as always"
+    },
+    {
+      "id": "K18",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Emirates NBD: Your new debit card has been dispatched and will reach you in 3 working days."
+    },
+    {
+      "id": "K19",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Is it safe to pay school fees with a credit card through the school's official portal?"
+    },
+    {
+      "id": "K20",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "I just transferred AED 500 to my daughter for her trip, she asked me last week"
+    },
+    {
+      "id": "K21",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your appointment at Dubai Hospital is confirmed for 3 December at 10:00 am."
+    },
+    {
+      "id": "K22",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your one-time password for the RAKBANK app is 772104. RAKBANK will never ask for your OTP."
+    },
+    {
+      "id": "K23",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "تم دفع فاتورة الكهرباء بنجاح بقيمة 350 درهم"
+    },
+    {
+      "id": "K24",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "How do I report a suspicious WhatsApp message to the police in Dubai?"
+    },
+    {
+      "id": "K25",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "My son says he needs AED 2,500 for a laptop for university, he's asking me to send it today"
+    },
+    {
+      "id": "K26",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "A man selling his car on Dubizzle wants a AED 2,000 deposit before I see the car"
+    },
+    {
+      "id": "K27",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Hi Dad, can you send me 300 for books? I'll show you the receipt later"
+    },
+    {
+      "id": "K28",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "My employer's finance team emailed asking me to update my IBAN for salary via a form link"
+    },
+    {
+      "id": "K29",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "A friend wants me to invest in his gold trading business, he promises the money back in 3 months"
+    },
+    {
+      "id": "K30",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "The plumber wants the full AED 1,800 paid upfront before starting the work"
+    }
+  ]
+}

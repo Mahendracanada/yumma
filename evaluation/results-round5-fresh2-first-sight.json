@@ -1,0 +1,691 @@
+{
+  "kind": "first-sight",
+  "runAt": "2026-11-24T12:40:05.028Z",
+  "version": "2.8.0",
+  "fileSha256": "fb8498fb1422fc349f938217c7ecd5644b923eb39d0cf8197d5d6df6435a6da2",
+  "aiProvider": "none",
+  "summary": {
+    "total": 40,
+    "contributors": 1,
+    "scams": {
+      "n": 20,
+      "protected": 12,
+      "verifyOnly": 4,
+      "missed": 4
+    },
+    "ambiguous": {
+      "n": 8,
+      "pass": 7
+    },
+    "benign": {
+      "n": 12,
+      "pass": 8,
+      "falseAlarms": 4
+    },
+    "overallCorrect": 27,
+    "actedOnItsOwn": 0,
+    "overallPct": 67.5,
+    "scamsWarnedPct": 80
+  },
+  "skipped": [],
+  "results": [
+    {
+      "id": "B001",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "impersonation_pressure"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "b523a5ef6aff53dd",
+      "message": "ENBD Alert: Unusual login detected from Lagos. If this was not you, secure your account immediately at enbd-protect-login.com",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B002",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "phishing_payment_link",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "bd53f05b59d90304",
+      "message": "Your Aramex shipment AE88213 could not be delivered. Reschedule and pay AED 9 redelivery charge: aramex-redeliver.co",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B003",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 80,
+      "patterns": [
+        "family_emergency_money",
+        "family_emergency"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "dd315ffabd19b68d",
+      "message": "Dad its me, phone died, using my friends number. Need AED 1200 for the hospital deposit right now, please hurry",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B004",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "credential_request",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "fa3479e0fe812a85",
+      "message": "From HR: all staff must re-confirm salary account details by today 5pm or salary will be held. Send IBAN and card PIN to payroll.update@gmail.com",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B005",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "device_takeover"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "1d0c0916303a41b0",
+      "message": "Good day, I'm calling from Microsoft. Your computer is sending virus alerts. Please download TeamViewer so we can fix it",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B006",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 50,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "9a0415189e9d57d5",
+      "message": "You have been selected for a Dubai Duty Free iPhone 16 promotion. Just pay AED 15 delivery to receive it",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B007",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 0,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "1b24c333d07925ee",
+      "message": "Habibi I miss you so much. My visa is stuck in Istanbul, can you send 4000 so I can finally come to you?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B008",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 90,
+      "patterns": [
+        "credential_request",
+        "impersonation_pressure",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "2d448a4d70625ed8",
+      "message": "Federal Tax Authority: you are eligible for a VAT refund of AED 2,340. Enter your card details to receive the refund today",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B009",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "prize_or_guaranteed_return"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "a1212cf29241b50b",
+      "message": "Crypto mentor here. Last month my students made 40% profit. Send 2000 USDT to my wallet and I'll trade for you, risk free",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B010",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "impersonation_pressure",
+        "third_party_money_request",
+        "threat_from_institution"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "04be1327b759be10",
+      "message": "Ministry of Interior: a traffic violation with arrest warrant is pending on your file. Call 04 555 0199 immediately and pay to avoid detention",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B011",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "safe_account"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "8acb782eb2a63e5e",
+      "message": "Hi, I'm from the bank's fraud team. We need to move your balance to a protected account while we investigate",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B012",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "dcdd47a4c88e8487",
+      "message": "Uncle Rashid here on a new whatsapp. Small favour, can you pay this invoice for me? I'll return it Sunday. Don't mention it to auntie",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B013",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "impersonation_pressure",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "5bdb99505804e556",
+      "message": "Your du number will be deactivated in 24 hours due to incomplete KYC. Update Emirates ID here: du-kyc-update.net",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B014",
+      "contributor": "F2",
+      "language": "Arabic",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "6b86d3a2224786cf",
+      "message": "هيئة الطرق: لديك مخالفة غير مدفوعة بقيمة 300 درهم، ادفعها خلال 24 ساعة عبر الرابط لتجنب الغرامة",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B015",
+      "contributor": "F2",
+      "language": "Arabic",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 80,
+      "patterns": [
+        "credential_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "4e70db7a8989c49d",
+      "message": "أنا من البنك، حسابك سيتم إيقافه اليوم. أرسل لي رمز التحقق الذي وصلك الآن",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B016",
+      "contributor": "F2",
+      "language": "Arabic",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "45dc86a0c8bf8048",
+      "message": "ماما، هذا رقمي الجديد، أنا في ورطة وأحتاج 2000 درهم بسرعة، لا تخبري بابا",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B017",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "ae1793fbd3098593",
+      "message": "Earn AED 1,500 weekly by rating hotels online. Training deposit AED 300 refundable after first task",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B018",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PARTIAL",
+      "ai": null,
+      "messageSha256": "17ee6327f0d1b36c",
+      "message": "Congrats! You're our lucky customer. Scan the QR code to claim your AED 500 Carrefour voucher and enter your card to verify",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B019",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "impersonation_pressure",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "859a61a092ea7247",
+      "message": "This is DHL. Customs duty of AED 45 is pending for your package. Pay within 12 hours or it will be returned",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B020",
+      "contributor": "F2",
+      "language": "English",
+      "category": "SCAM",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "3e9af53c9b6b4a40",
+      "message": "I'm a lawyer handling the estate of a late client with your surname. You are the beneficiary of USD 4.5 million; a small legal fee is required",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B021",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 10,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "8912f3049b5ae072",
+      "message": "Your Noon order #N-8812 has been shipped and will arrive tomorrow.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B022",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "18406cf704a462db",
+      "message": "ADCB: AED 250.00 was spent on your card ending 7781 at Lulu Hypermarket. Not you? Call the number on the back of your card.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B023",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "58b87e30e47040e9",
+      "message": "Can you remind me when my credit card payment is due this month?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B024",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 25,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "57670cc92072edc2",
+      "message": "I want to send AED 1,000 to my mother in Kerala through the Al Ansari app like I do every month",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B025",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 29,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "7c581cbcdd6a8974",
+      "message": "Your verification code for Careem is 5531. Never share this code.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B026",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 20,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "3151760e3a6dded0",
+      "message": "Hi Mum, I got the job! Starting next month, will call you tonight",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B027",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "d62eeea584f726da",
+      "message": "Your Salik account was recharged with AED 100 successfully.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B028",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "79524b427e133a16",
+      "message": "What should I do if someone asks for my OTP on the phone?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B029",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 10,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "5635517010113817",
+      "message": "Dear customer, your statement for November is ready. View it in the FAB mobile app.",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B030",
+      "contributor": "F2",
+      "language": "Arabic",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 0,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "e40982f14ae68661",
+      "message": "تم إيداع راتبك بقيمة 12,000 درهم في حسابك",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B031",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "INFORMATIONAL",
+      "score": 29,
+      "patterns": [],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "f67853f7129871a2",
+      "message": "I paid the electricity bill on the DEWA website this morning, can you check the amount looks normal?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B032",
+      "contributor": "F2",
+      "language": "English",
+      "category": "BENIGN",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "FALSE ALARM",
+      "ai": null,
+      "messageSha256": "c1a97e60bc441e2a",
+      "message": "My sister asked me to split the restaurant bill, I'll send her AED 85 on the app",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B033",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "0f1f10046be695f3",
+      "message": "Hi, this is your neighbour Omar, I'm locked out and my wallet is inside. Could you lend me AED 200 for the locksmith?",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B034",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "INFORMATIONAL",
+      "score": 10,
+      "patterns": [],
+      "result": "MISS",
+      "ai": null,
+      "messageSha256": "1b38ed84480f66e8",
+      "message": "Our company changed its payroll provider. Please confirm your bank details on the new HR portal by Friday",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B035",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 50,
+      "patterns": [
+        "third_party_money_request",
+        "identity_probe"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "382705567d5ced1b",
+      "message": "A buyer on Dubizzle wants to pay by bank transfer and asked for my full name and IBAN",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B036",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "162aa725c05567e0",
+      "message": "My brother wants me to invest AED 20,000 in his friend's restaurant, he says the return is very good",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B037",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "0c56705f539b41a8",
+      "message": "Landlord: please transfer the renewal amount to the same account as last year, cheques are not accepted anymore",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B038",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "advance_fee",
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "6cdde2491e51c13d",
+      "message": "Someone from a recruitment agency says the visa processing fee will be deducted from my first salary",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B039",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "VERIFY",
+      "score": 40,
+      "patterns": [
+        "third_party_money_request"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "043a83e7a6b9b3eb",
+      "message": "An old classmate I haven't spoken to in years messaged asking to borrow money for his daughter's school fees",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    },
+    {
+      "id": "B040",
+      "contributor": "F2",
+      "language": "English",
+      "category": "AMBIGUOUS",
+      "posture": "PAUSE_AND_PROTECT",
+      "score": 75,
+      "patterns": [
+        "payee_change"
+      ],
+      "result": "PASS",
+      "ai": null,
+      "messageSha256": "2dada263bc364d8c",
+      "message": "The school sent a new account number for fee payments by email, signed by the accounts office",
+      "authorizationGranted": false,
+      "externalActionTaken": false
+    }
+  ],
+  "note": "First-sight run of the CSV this set was built from (same messages, same order), before any fix for these messages."
+}

@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-11-24T13:28:52.674Z",
+  "evaluationType": "deterministic synthetic scenario regression",
+  "scenarios": 5,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "id": "bank-transfer-pressure",
+      "title": "Urgent bank transfer",
+      "category": "financial-scam",
+      "expectedPosture": "PAUSE_AND_PROTECT",
+      "actualPosture": "PAUSE_AND_PROTECT",
+      "riskLevel": "HIGH",
+      "riskScore": 90,
+      "policyDecision": "DENY_SYNTHETIC_ACTION",
+      "checks": {
+        "postureMatchesExpected": true,
+        "authorizationRemainsFalse": true,
+        "externalActionRemainsFalse": true,
+        "riskAndPolicyPresent": true
+      },
+      "passed": true
+    },
+    {
+      "id": "otp-request",
+      "title": "One-time code request",
+      "category": "credential-theft",
+      "expectedPosture": "PAUSE_AND_PROTECT",
+      "actualPosture": "PAUSE_AND_PROTECT",
+      "riskLevel": "HIGH",
+      "riskScore": 100,
+      "policyDecision": "DENY_SYNTHETIC_ACTION",
+      "checks": {
+        "postureMatchesExpected": true,
+        "authorizationRemainsFalse": true,
+        "externalActionRemainsFalse": true,
+        "riskAndPolicyPresent": true
+      },
+      "passed": true
+    },
+    {
+      "id": "remote-access",
+      "title": "Remote access request",
+      "category": "device-takeover",
+      "expectedPosture": "PAUSE_AND_PROTECT",
+      "actualPosture": "PAUSE_AND_PROTECT",
+      "riskLevel": "HIGH",
+      "riskScore": 75,
+      "policyDecision": "DENY_SYNTHETIC_ACTION",
+      "checks": {
+        "postureMatchesExpected": true,
+        "authorizationRemainsFalse": true,
+        "externalActionRemainsFalse": true,
+        "riskAndPolicyPresent": true
+      },
+      "passed": true
+    },
+    {
+      "id": "family-new-number",
+      "title": "Relative on a new number",
+      "category": "family-impersonation",
+      "expectedPosture": "PAUSE_AND_PROTECT",
+      "actualPosture": "PAUSE_AND_PROTECT",
+      "riskLevel": "HIGH",
+      "riskScore": 100,
+      "policyDecision": "DENY_SYNTHETIC_ACTION",
+      "checks": {
+        "postureMatchesExpected": true,
+        "authorizationRemainsFalse": true,
+        "externalActionRemainsFalse": true,
+        "riskAndPolicyPresent": true
+      },
+      "passed": true
+    },
+    {
+      "id": "benign-information",
+      "title": "Benign information request",
+      "category": "control-case",
+      "expectedPosture": "INFORMATIONAL",
+      "actualPosture": "INFORMATIONAL",
+      "riskLevel": "LOW",
+      "riskScore": 10,
+      "policyDecision": "ALLOW_INFORMATIONAL_GUIDANCE_ONLY",
+      "checks": {
+        "postureMatchesExpected": true,
+        "authorizationRemainsFalse": true,
+        "externalActionRemainsFalse": true,
+        "riskAndPolicyPresent": true
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Synthetic authored scenarios only; not a real-world fraud detection accuracy estimate.",
+    "The evaluation exercises the deterministic local agent engine, not live bank or messaging integrations.",
+    "A passing result does not establish production security, independent validation, or Android readiness."
+  ]
+}

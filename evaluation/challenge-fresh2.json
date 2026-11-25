@@ -1,0 +1,246 @@
+{
+  "name": "Yumma fresh round 2 (raw pasted messages, run once before fixes)",
+  "frozen": "2026-11-24: written after the first generalisation fixes, first-sight result recorded, then used to fix gaps",
+  "cases": [
+    {
+      "id": "G01",
+      "category": "SCAM",
+      "type": "payee change",
+      "message": "ENBD Alert: Unusual login detected from Lagos. If this was not you, secure your account immediately at enbd-protect-login.com"
+    },
+    {
+      "id": "G02",
+      "category": "SCAM",
+      "type": "delivery fee",
+      "message": "Your Aramex shipment AE88213 could not be delivered. Reschedule and pay AED 9 redelivery charge: aramex-redeliver.co"
+    },
+    {
+      "id": "G03",
+      "category": "SCAM",
+      "type": "family impersonation",
+      "message": "Dad its me, phone died, using my friends number. Need AED 1200 for the hospital deposit right now, please hurry"
+    },
+    {
+      "id": "G04",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "From HR: all staff must re-confirm salary account details by today 5pm or salary will be held. Send IBAN and card PIN to payroll.update@gmail.com"
+    },
+    {
+      "id": "G05",
+      "category": "SCAM",
+      "type": "device takeover",
+      "message": "Good day, I'm calling from Microsoft. Your computer is sending virus alerts. Please download TeamViewer so we can fix it"
+    },
+    {
+      "id": "G06",
+      "category": "SCAM",
+      "type": "prize or advance fee",
+      "message": "You have been selected for a Dubai Duty Free iPhone 16 promotion. Just pay AED 15 delivery to receive it"
+    },
+    {
+      "id": "G07",
+      "category": "SCAM",
+      "type": "romance",
+      "message": "Habibi I miss you so much. My visa is stuck in Istanbul, can you send 4000 so I can finally come to you?"
+    },
+    {
+      "id": "G08",
+      "category": "SCAM",
+      "type": "phishing link",
+      "message": "Federal Tax Authority: you are eligible for a VAT refund of AED 2,340. Enter your card details to receive the refund today"
+    },
+    {
+      "id": "G09",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "Crypto mentor here. Last month my students made 40% profit. Send 2000 USDT to my wallet and I'll trade for you, risk free"
+    },
+    {
+      "id": "G10",
+      "category": "SCAM",
+      "type": "authority threat",
+      "message": "Ministry of Interior: a traffic violation with arrest warrant is pending on your file. Call 04 555 0199 immediately and pay to avoid detention"
+    },
+    {
+      "id": "G11",
+      "category": "SCAM",
+      "type": "safe account",
+      "message": "Hi, I'm from the bank's fraud team. We need to move your balance to a protected account while we investigate"
+    },
+    {
+      "id": "G12",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "Uncle Rashid here on a new whatsapp. Small favour, can you pay this invoice for me? I'll return it Sunday. Don't mention it to auntie"
+    },
+    {
+      "id": "G13",
+      "category": "SCAM",
+      "type": "phishing link",
+      "message": "Your du number will be deactivated in 24 hours due to incomplete KYC. Update Emirates ID here: du-kyc-update.net"
+    },
+    {
+      "id": "G14",
+      "category": "SCAM",
+      "type": "fine or toll",
+      "message": "هيئة الطرق: لديك مخالفة غير مدفوعة بقيمة 300 درهم، ادفعها خلال 24 ساعة عبر الرابط لتجنب الغرامة"
+    },
+    {
+      "id": "G15",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "أنا من البنك، حسابك سيتم إيقافه اليوم. أرسل لي رمز التحقق الذي وصلك الآن"
+    },
+    {
+      "id": "G16",
+      "category": "SCAM",
+      "type": "family impersonation",
+      "message": "ماما، هذا رقمي الجديد، أنا في ورطة وأحتاج 2000 درهم بسرعة، لا تخبري بابا"
+    },
+    {
+      "id": "G17",
+      "category": "SCAM",
+      "type": "job or task fee",
+      "message": "Earn AED 1,500 weekly by rating hotels online. Training deposit AED 300 refundable after first task"
+    },
+    {
+      "id": "G18",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "Congrats! You're our lucky customer. Scan the QR code to claim your AED 500 Carrefour voucher and enter your card to verify"
+    },
+    {
+      "id": "G19",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "This is DHL. Customs duty of AED 45 is pending for your package. Pay within 12 hours or it will be returned"
+    },
+    {
+      "id": "G20",
+      "category": "SCAM",
+      "type": "prize or advance fee",
+      "message": "I'm a lawyer handling the estate of a late client with your surname. You are the beneficiary of USD 4.5 million; a small legal fee is required"
+    },
+    {
+      "id": "G21",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your Noon order #N-8812 has been shipped and will arrive tomorrow."
+    },
+    {
+      "id": "G22",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "ADCB: AED 250.00 was spent on your card ending 7781 at Lulu Hypermarket. Not you? Call the number on the back of your card."
+    },
+    {
+      "id": "G23",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Can you remind me when my credit card payment is due this month?"
+    },
+    {
+      "id": "G24",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "I want to send AED 1,000 to my mother in Kerala through the Al Ansari app like I do every month"
+    },
+    {
+      "id": "G25",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your verification code for Careem is 5531. Never share this code."
+    },
+    {
+      "id": "G26",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Hi Mum, I got the job! Starting next month, will call you tonight"
+    },
+    {
+      "id": "G27",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your Salik account was recharged with AED 100 successfully."
+    },
+    {
+      "id": "G28",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "What should I do if someone asks for my OTP on the phone?"
+    },
+    {
+      "id": "G29",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Dear customer, your statement for November is ready. View it in the FAB mobile app."
+    },
+    {
+      "id": "G30",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "تم إيداع راتبك بقيمة 12,000 درهم في حسابك"
+    },
+    {
+      "id": "G31",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "I paid the electricity bill on the DEWA website this morning, can you check the amount looks normal?"
+    },
+    {
+      "id": "G32",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "My sister asked me to split the restaurant bill, I'll send her AED 85 on the app"
+    },
+    {
+      "id": "G33",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Hi, this is your neighbour Omar, I'm locked out and my wallet is inside. Could you lend me AED 200 for the locksmith?"
+    },
+    {
+      "id": "G34",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Our company changed its payroll provider. Please confirm your bank details on the new HR portal by Friday"
+    },
+    {
+      "id": "G35",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "A buyer on Dubizzle wants to pay by bank transfer and asked for my full name and IBAN"
+    },
+    {
+      "id": "G36",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "My brother wants me to invest AED 20,000 in his friend's restaurant, he says the return is very good"
+    },
+    {
+      "id": "G37",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Landlord: please transfer the renewal amount to the same account as last year, cheques are not accepted anymore"
+    },
+    {
+      "id": "G38",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Someone from a recruitment agency says the visa processing fee will be deducted from my first salary"
+    },
+    {
+      "id": "G39",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "An old classmate I haven't spoken to in years messaged asking to borrow money for his daughter's school fees"
+    },
+    {
+      "id": "G40",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "The school sent a new account number for fee payments by email, signed by the accounts office"
+    }
+  ]
+}

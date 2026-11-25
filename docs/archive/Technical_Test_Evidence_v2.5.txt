@@ -1,0 +1,423 @@
+
+> yumma-local-prototype@2.5.0 verify
+> npm run integrity && npm run check && npm test && npm run evaluate && npm run smoke
+
+
+> yumma-local-prototype@2.5.0 integrity
+> node scripts/check-source-integrity.js
+
+Source integrity check: PASS (17 required files present).
+
+> yumma-local-prototype@2.5.0 check
+> node --check src/server.js && node --check src/agent.js && node --check src/model-adapter.js && node --check public/app.js
+
+
+> yumma-local-prototype@2.5.0 test
+> node --test
+
+TAP version 13
+# Subtest: requires explicit consent and purpose
+ok 1 - requires explicit consent and purpose
+  ---
+  duration_ms: 2.930872
+  type: 'test'
+  ...
+# Subtest: requires explicit self-attestation of calm state
+ok 2 - requires explicit self-attestation of calm state
+  ---
+  duration_ms: 0.747545
+  type: 'test'
+  ...
+# Subtest: requires at least one concrete trigger
+ok 3 - requires at least one concrete trigger
+  ---
+  duration_ms: 0.986185
+  type: 'test'
+  ...
+# Subtest: stores the person’s wording and scoped purpose
+ok 4 - stores the person’s wording and scoped purpose
+  ---
+  duration_ms: 1.654941
+  type: 'test'
+  ...
+# Subtest: recalls gently only on a matching trigger
+ok 5 - recalls gently only on a matching trigger
+  ---
+  duration_ms: 1.726399
+  type: 'test'
+  ...
+# Subtest: does not expire before its expiry time
+ok 6 - does not expire before its expiry time
+  ---
+  duration_ms: 1.51459
+  type: 'test'
+  ...
+# Subtest: revocation stops future recall
+ok 7 - revocation stops future recall
+  ---
+  duration_ms: 1.390924
+  type: 'test'
+  ...
+# Subtest: expired contracts are not recalled
+ok 8 - expired contracts are not recalled
+  ---
+  duration_ms: 3.947042
+  type: 'test'
+  ...
+# Subtest: recall never creates authority or action permission
+ok 9 - recall never creates authority or action permission
+  ---
+  duration_ms: 1.455461
+  type: 'test'
+  ...
+# Subtest: memory is profile scoped and revocation prevents retrieval
+ok 10 - memory is profile scoped and revocation prevents retrieval
+  ---
+  duration_ms: 3.966792
+  type: 'test'
+  ...
+# Subtest: expired memory does not appear in retrieval
+ok 11 - expired memory does not appear in retrieval
+  ---
+  duration_ms: 1.417905
+  type: 'test'
+  ...
+# Subtest: expiry and matching recall persist together without resurrecting expired contracts
+ok 12 - expiry and matching recall persist together without resurrecting expired contracts
+  ---
+  duration_ms: 2.462488
+  type: 'test'
+  ...
+# Subtest: contradictory memories are surfaced for user resolution, not overwritten
+ok 13 - contradictory memories are surfaced for user resolution, not overwritten
+  ---
+  duration_ms: 1.255129
+  type: 'test'
+  ...
+# Subtest: conversation session creates an isolated temporary session
+ok 14 - conversation session creates an isolated temporary session
+  ---
+  duration_ms: 1.089329
+  type: 'test'
+  ...
+# Subtest: conversation history is bounded to the latest eight turns
+ok 15 - conversation history is bounded to the latest eight turns
+  ---
+  duration_ms: 0.854526
+  type: 'test'
+  ...
+# Subtest: session identifiers are replaced when malformed
+ok 16 - session identifiers are replaced when malformed
+  ---
+  duration_ms: 0.498491
+  type: 'test'
+  ...
+# Subtest: expired sessions are pruned
+ok 17 - expired sessions are pruned
+  ---
+  duration_ms: 0.141774
+  type: 'test'
+  ...
+# Subtest: provides four bounded synthetic judge scenarios
+ok 18 - provides four bounded synthetic judge scenarios
+  ---
+  duration_ms: 0.735067
+  type: 'test'
+  ...
+# Subtest: all demo scenarios produce their declared protection posture
+ok 19 - all demo scenarios produce their declared protection posture
+  ---
+  duration_ms: 3.364956
+  type: 'test'
+  ...
+# Subtest: unknown scenario is not resolved to a fallback
+ok 20 - unknown scenario is not resolved to a fallback
+  ---
+  duration_ms: 0.136586
+  type: 'test'
+  ...
+# Subtest: judge scenario registry is fully evaluable and preserves safety invariants
+ok 21 - judge scenario registry is fully evaluable and preserves safety invariants
+  ---
+  duration_ms: 5.534622
+  type: 'test'
+  ...
+# Subtest: maps a payment-pressure request across financial and essential-needs domains
+ok 22 - maps a payment-pressure request across financial and essential-needs domains
+  ---
+  duration_ms: 1.938329
+  type: 'test'
+  ...
+# Subtest: maps remote access to device control and privacy consequences
+ok 23 - maps remote access to device control and privacy consequences
+  ---
+  duration_ms: 0.546934
+  type: 'test'
+  ...
+# Subtest: links relevant personal boundary and commitment without changing them
+ok 24 - links relevant personal boundary and commitment without changing them
+  ---
+  duration_ms: 2.720966
+  type: 'test'
+  ...
+# Subtest: benign informational request stays proportionate and non-alarmist
+ok 25 - benign informational request stays proportionate and non-alarmist
+  ---
+  duration_ms: 0.304939
+  type: 'test'
+  ...
+# Subtest: every impact has a concrete proportionate intervention
+ok 26 - every impact has a concrete proportionate intervention
+  ---
+  duration_ms: 0.183076
+  type: 'test'
+  ...
+# Subtest: memory is profile-scoped across listing, retrieval and revocation
+ok 27 - memory is profile-scoped across listing, retrieval and revocation
+  ---
+  duration_ms: 4.39059
+  type: 'test'
+  ...
+# Subtest: revoked memories never reappear in retrieval
+ok 28 - revoked memories never reappear in retrieval
+  ---
+  duration_ms: 1.783365
+  type: 'test'
+  ...
+# Subtest: expired memories do not appear in graph or retrieval
+ok 29 - expired memories do not appear in graph or retrieval
+  ---
+  duration_ms: 3.2948
+  type: 'test'
+  ...
+# Subtest: memory updates reject invalid patches and refresh classification
+ok 30 - memory updates reject invalid patches and refresh classification
+  ---
+  duration_ms: 2.686875
+  type: 'test'
+  ...
+# Subtest: conflicting memories remain visible for person-led resolution
+ok 31 - conflicting memories remain visible for person-led resolution
+  ---
+  duration_ms: 3.105436
+  type: 'test'
+  ...
+# Subtest: contract recalls are profile-scoped and revocable
+ok 32 - contract recalls are profile-scoped and revocable
+  ---
+  duration_ms: 3.36811
+  type: 'test'
+  ...
+# Subtest: expiry transition is preserved when other contracts are recalled
+ok 33 - expiry transition is preserved when other contracts are recalled
+  ---
+  duration_ms: 1.751617
+  type: 'test'
+  ...
+# Subtest: consent is required for memory and contract writes
+ok 34 - consent is required for memory and contract writes
+  ---
+  duration_ms: 1.231864
+  type: 'test'
+  ...
+# Subtest: model adapter stays disabled when no provider is configured
+ok 35 - model adapter stays disabled when no provider is configured
+  ---
+  duration_ms: 0.949439
+  type: 'test'
+  ...
+# Subtest: model input carries policy as read-only context and bounds message size
+ok 36 - model input carries policy as read-only context and bounds message size
+  ---
+  duration_ms: 0.23226
+  type: 'test'
+  ...
+# Subtest: adapter accepts explanation only and strips attempted tool instructions
+ok 37 - adapter accepts explanation only and strips attempted tool instructions
+  ---
+  duration_ms: 1.264854
+  type: 'test'
+  ...
+# Subtest: invalid or oversized model output is rejected
+ok 38 - invalid or oversized model output is rejected
+  ---
+  duration_ms: 0.519532
+  type: 'test'
+  ...
+# Subtest: model failure cannot change the deterministic policy result
+ok 39 - model failure cannot change the deterministic policy result
+  ---
+  duration_ms: 0.497869
+  type: 'test'
+  ...
+# Subtest: rejects model explanations that instruct credential disclosure or money movement
+ok 40 - rejects model explanations that instruct credential disclosure or money movement
+  ---
+  duration_ms: 0.488465
+  type: 'test'
+  ...
+# Subtest: allows calm verification guidance
+ok 41 - allows calm verification guidance
+  ---
+  duration_ms: 0.144758
+  type: 'test'
+  ...
+# Subtest: detects Arabic script without claiming general Arabic fluency
+ok 42 - detects Arabic script without claiming general Arabic fluency
+  ---
+  duration_ms: 2.316848
+  type: 'test'
+  ...
+# Subtest: Arabic urgent transfer request triggers high-risk protection
+ok 43 - Arabic urgent transfer request triggers high-risk protection
+  ---
+  duration_ms: 2.736039
+  type: 'test'
+  ...
+# Subtest: Arabic OTP request is treated as credential risk
+ok 44 - Arabic OTP request is treated as credential risk
+  ---
+  duration_ms: 0.411629
+  type: 'test'
+  ...
+# Subtest: Arabic ordinary informational question does not become high risk
+ok 45 - Arabic ordinary informational question does not become high risk
+  ---
+  duration_ms: 0.413432
+  type: 'test'
+  ...
+# Subtest: benign request stays informational
+ok 46 - benign request stays informational
+  ---
+  duration_ms: 0.774616
+  type: 'test'
+  ...
+# Subtest: high risk request pauses and requires human confirmation
+ok 47 - high risk request pauses and requires human confirmation
+  ---
+  duration_ms: 0.615177
+  type: 'test'
+  ...
+# Subtest: medium risk recommends verification without overclaiming a block
+ok 48 - medium risk recommends verification without overclaiming a block
+  ---
+  duration_ms: 0.15949
+  type: 'test'
+  ...
+# Subtest: calm-state reminder never grants authority
+ok 49 - calm-state reminder never grants authority
+  ---
+  duration_ms: 0.137237
+  type: 'test'
+  ...
+# Subtest: high risk takes precedence over a recalled commitment
+ok 50 - high risk takes precedence over a recalled commitment
+  ---
+  duration_ms: 0.165278
+  type: 'test'
+  ...
+# Subtest: every plan explicitly records no external action
+ok 51 - every plan explicitly records no external action
+  ---
+  duration_ms: 0.144197
+  type: 'test'
+  ...
+# Subtest: benign banking information request remains informational
+ok 52 - benign banking information request remains informational
+  ---
+  duration_ms: 2.916981
+  type: 'test'
+  ...
+# Subtest: a reported scam message is not treated as the user authorising its instructions
+ok 53 - a reported scam message is not treated as the user authorising its instructions
+  ---
+  duration_ms: 0.688787
+  type: 'test'
+  ...
+# Subtest: prompt-injection text in the incoming message does not change deterministic policy
+ok 54 - prompt-injection text in the incoming message does not change deterministic policy
+  ---
+  duration_ms: 0.224508
+  type: 'test'
+  ...
+# Subtest: ambiguous short message requests clarification rather than asserting a fraud verdict
+ok 55 - ambiguous short message requests clarification rather than asserting a fraud verdict
+  ---
+  duration_ms: 0.493974
+  type: 'test'
+  ...
+# Subtest: unrecognised non-English request is not falsely labelled as a verified threat
+ok 56 - unrecognised non-English request is not falsely labelled as a verified threat
+  ---
+  duration_ms: 0.217458
+  type: 'test'
+  ...
+# Subtest: model boundary passes hostile user content as untrusted text and keeps policy immutable
+ok 57 - model boundary passes hostile user content as untrusted text and keeps policy immutable
+  ---
+  duration_ms: 0.210416
+  type: 'test'
+  ...
+# Subtest: unsafe model explanation recommending an OTP disclosure is rejected
+ok 58 - unsafe model explanation recommending an OTP disclosure is rejected
+  ---
+  duration_ms: 0.646984
+  type: 'test'
+  ...
+# Subtest: unsafe model explanation recommending money movement is rejected
+ok 59 - unsafe model explanation recommending money movement is rejected
+  ---
+  duration_ms: 0.284147
+  type: 'test'
+  ...
+# Subtest: classifies temporary instructions separately from durable preferences
+ok 60 - classifies temporary instructions separately from durable preferences
+  ---
+  duration_ms: 1.281429
+  type: 'test'
+  ...
+# Subtest: recognises commitments and boundaries
+ok 61 - recognises commitments and boundaries
+  ---
+  duration_ms: 0.200793
+  type: 'test'
+  ...
+# Subtest: flags contradictory memories for user resolution, never automatic overwrite
+ok 62 - flags contradictory memories for user resolution, never automatic overwrite
+  ---
+  duration_ms: 0.390858
+  type: 'test'
+  ...
+# Subtest: graph only includes active nodes and reports categories
+ok 63 - graph only includes active nodes and reports categories
+  ---
+  duration_ms: 0.211338
+  type: 'test'
+  ...
+1..63
+# tests 63
+# suites 0
+# pass 63
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 249.316862
+
+> yumma-local-prototype@2.5.0 evaluate
+> node scripts/run-evaluation.js
+
+Yumma scenario evaluation: 4/4 passed; 0 failed.
+PASS bank-transfer-pressure: PAUSE_AND_PROTECT (expected PAUSE_AND_PROTECT)
+PASS otp-request: PAUSE_AND_PROTECT (expected PAUSE_AND_PROTECT)
+PASS remote-access: PAUSE_AND_PROTECT (expected PAUSE_AND_PROTECT)
+PASS benign-information: INFORMATIONAL (expected INFORMATIONAL)
+
+> yumma-local-prototype@2.5.0 smoke
+> node scripts/smoke-demo.js
+
+Yumma 2.5.0 local demo smoke test: PASS
+PASS health/version consistency
+PASS demo-only readiness
+PASS four judge scenarios available
+PASS browser interface responds

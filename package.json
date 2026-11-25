@@ -1,0 +1,24 @@
+{
+  "name": "yumma-local-prototype",
+  "version": "2.8.0",
+  "private": true,
+  "description": "Yumma synthetic local AI-agent competition prototype",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "node --check src/server.js && node --check src/agent.js && node --check src/model-adapter.js && node --check public/app.js && node --check evaluation/run-challenge.js && node --check src/trace.js && node --check evaluation/run-redteam.js && node --check evaluation/run-benchmark.js && node --check evaluation/run-blind.js && node --check evaluation/run-ai-gap.js",
+    "evaluate": "node scripts/run-evaluation.js",
+    "smoke": "node scripts/smoke-demo.js",
+    "verify": "npm run integrity && npm run check && npm test && npm run evaluate && npm run challenge && npm run redteam && npm run smoke",
+    "integrity": "node scripts/check-source-integrity.js",
+    "challenge": "node evaluation/run-challenge.js",
+    "challenge:ai": "node evaluation/run-challenge.js --ai --json evaluation/results-ai-run.json",
+    "redteam": "node evaluation/run-redteam.js",
+    "benchmark": "node evaluation/run-benchmark.js",
+    "blind": "node evaluation/run-blind.js",
+    "ai-gap": "node evaluation/run-ai-gap.js"
+  }
+}

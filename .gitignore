@@ -1,0 +1,12 @@
+node_modules/
+.env
+.DS_Store
+*.tmp
+# Runtime stores and logs: created on first use, never committed
+data/*.json
+!data/salma-profile.json
+data/decision-log.jsonl
+evaluation/results-ai-run.json
+# Blind-test responses and runs stay local until I choose to publish them
+evaluation/blind/*.csv
+!evaluation/blind/blind-template.csv

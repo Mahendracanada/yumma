@@ -1,0 +1,2274 @@
+{
+  "label": "run",
+  "runAt": "2026-11-24T12:44:23.911Z",
+  "aiProvider": "none",
+  "tuning": {
+    "name": "Yumma tuning challenge set",
+    "rows": [
+      {
+        "id": "T01",
+        "category": "SCAM",
+        "type": "grandparent emergency",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T02",
+        "category": "SCAM",
+        "type": "telecom code",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T03",
+        "category": "SCAM",
+        "type": "prize fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 90,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T04",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T05",
+        "category": "SCAM",
+        "type": "gift cards",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T06",
+        "category": "SCAM",
+        "type": "safe-account",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T07",
+        "category": "SCAM",
+        "type": "customs fee link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T08",
+        "category": "SCAM",
+        "type": "Arabic OTP",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T09",
+        "category": "SCAM",
+        "type": "bank impersonation (demo)",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T10",
+        "category": "SCAM",
+        "type": "account threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T11",
+        "category": "SCAM",
+        "type": "romance",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T12",
+        "category": "SCAM",
+        "type": "agent execution request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T13",
+        "category": "SCAM",
+        "type": "prompt injection",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T14",
+        "category": "SCAM",
+        "type": "crypto recovery",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T15",
+        "category": "SCAM",
+        "type": "fake police fine",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T16",
+        "category": "SCAM",
+        "type": "Arabic prize",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T17",
+        "category": "SCAM",
+        "type": "card details",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T18",
+        "category": "SCAM",
+        "type": "Arabic family emergency",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T19",
+        "category": "AMBIGUOUS",
+        "type": "family hospital (YS-15)",
+        "posture": "VERIFY",
+        "score": 45,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T20",
+        "category": "AMBIGUOUS",
+        "type": "business email change (YS-13)",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T21",
+        "category": "AMBIGUOUS",
+        "type": "unknown caller asks details",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T22",
+        "category": "BENIGN",
+        "type": "opening hours (demo)",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T23",
+        "category": "BENIGN",
+        "type": "known family transfer",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T24",
+        "category": "BENIGN",
+        "type": "official app update",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T25",
+        "category": "BENIGN",
+        "type": "bill reminder",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T26",
+        "category": "BENIGN",
+        "type": "what is OTP (YS-04)",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T27",
+        "category": "BENIGN",
+        "type": "utility bill (YS-07)",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T28",
+        "category": "BENIGN",
+        "type": "guarantee question (YS-20)",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T29",
+        "category": "BENIGN",
+        "type": "budget help",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T30",
+        "category": "BENIGN",
+        "type": "Arabic greeting",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T31",
+        "category": "BENIGN",
+        "type": "salary day",
+        "posture": "INFORMATIONAL",
+        "score": 20,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T32",
+        "category": "BENIGN",
+        "type": "pay friend back",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 32,
+      "scam": {
+        "n": 18,
+        "protect": 18,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 3,
+        "pass": 3,
+        "missed": 0
+      },
+      "benign": {
+        "n": 11,
+        "pass": 11,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 32,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 18
+    }
+  },
+  "tuning2": {
+    "name": "Yumma tuning set 2 (raw pasted messages, used to tune the v2.8 generalisation round)",
+    "rows": [
+      {
+        "id": "T201",
+        "category": "SCAM",
+        "type": "payee change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T202",
+        "category": "SCAM",
+        "type": "fine or toll",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T203",
+        "category": "SCAM",
+        "type": "delivery fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 95,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T204",
+        "category": "SCAM",
+        "type": "prize or advance fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T205",
+        "category": "SCAM",
+        "type": "family impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T206",
+        "category": "SCAM",
+        "type": "gift cards",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T207",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T208",
+        "category": "SCAM",
+        "type": "safe account",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T209",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T210",
+        "category": "SCAM",
+        "type": "device takeover",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T211",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T212",
+        "category": "SCAM",
+        "type": "phishing link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T213",
+        "category": "SCAM",
+        "type": "job or task fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T214",
+        "category": "SCAM",
+        "type": "authority threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T215",
+        "category": "SCAM",
+        "type": "scam",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T216",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T217",
+        "category": "SCAM",
+        "type": "payee change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T218",
+        "category": "SCAM",
+        "type": "payee change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T219",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T220",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T221",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T222",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T223",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T224",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T225",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T226",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T227",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T228",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T229",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T230",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T231",
+        "category": "SCAM",
+        "type": "phishing link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T232",
+        "category": "SCAM",
+        "type": "gift cards",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T233",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T234",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "T235",
+        "category": "SCAM",
+        "type": "scam",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 35,
+      "scam": {
+        "n": 21,
+        "protect": 21,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 5,
+        "pass": 5,
+        "missed": 0
+      },
+      "benign": {
+        "n": 9,
+        "pass": 9,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 35,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 21
+    }
+  },
+  "holdout": {
+    "name": "Yumma frozen holdout challenge set",
+    "rows": [
+      {
+        "id": "H01",
+        "category": "SCAM",
+        "type": "family impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H02",
+        "category": "SCAM",
+        "type": "bank impersonation / OTP",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H03",
+        "category": "SCAM",
+        "type": "delivery fee phishing",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H04",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H05",
+        "category": "SCAM",
+        "type": "government impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H06",
+        "category": "SCAM",
+        "type": "remote access",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H07",
+        "category": "SCAM",
+        "type": "romance",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H08",
+        "category": "SCAM",
+        "type": "task / job scam",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H09",
+        "category": "SCAM",
+        "type": "prize",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H10",
+        "category": "SCAM",
+        "type": "utility disconnection",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H11",
+        "category": "SCAM",
+        "type": "safe-account",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 90,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H12",
+        "category": "SCAM",
+        "type": "rental / changed payee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H13",
+        "category": "SCAM",
+        "type": "refund / screen share",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H14",
+        "category": "SCAM",
+        "type": "stranded relative",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H15",
+        "category": "SCAM",
+        "type": "Arabic card phishing",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H16",
+        "category": "SCAM",
+        "type": "Arabic safe-account",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 95,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H17",
+        "category": "SCAM",
+        "type": "WhatsApp takeover",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H18",
+        "category": "SCAM",
+        "type": "CEO gift-card",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H19",
+        "category": "AMBIGUOUS",
+        "type": "hospital payment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H20",
+        "category": "AMBIGUOUS",
+        "type": "supplier bank change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H21",
+        "category": "AMBIGUOUS",
+        "type": "identity probing",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H22",
+        "category": "AMBIGUOUS",
+        "type": "marketplace payment link",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H23",
+        "category": "BENIGN",
+        "type": "banking how-to",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H24",
+        "category": "BENIGN",
+        "type": "routine remittance",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H25",
+        "category": "BENIGN",
+        "type": "financial literacy",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H26",
+        "category": "BENIGN",
+        "type": "reminder",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H27",
+        "category": "BENIGN",
+        "type": "self-initiated OTP",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H28",
+        "category": "BENIGN",
+        "type": "savings question",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H29",
+        "category": "BENIGN",
+        "type": "Arabic opening hours",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "H30",
+        "category": "BENIGN",
+        "type": "school fees",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 30,
+      "scam": {
+        "n": 18,
+        "protect": 18,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 4,
+        "pass": 4,
+        "missed": 0
+      },
+      "benign": {
+        "n": 8,
+        "pass": 8,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 30,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 18
+    }
+  },
+  "fresh": {
+    "name": "Yumma fresh post-fix check (run once)",
+    "rows": [
+      {
+        "id": "F01",
+        "category": "SCAM",
+        "type": "bank card cloning call",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F02",
+        "category": "SCAM",
+        "type": "fake Salik/RTA",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F03",
+        "category": "SCAM",
+        "type": "lottery processing",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F04",
+        "category": "SCAM",
+        "type": "forex group",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F05",
+        "category": "SCAM",
+        "type": "daughter new phone",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F06",
+        "category": "SCAM",
+        "type": "tech support",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F07",
+        "category": "SCAM",
+        "type": "arrest threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F08",
+        "category": "SCAM",
+        "type": "Arabic bank update",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F09",
+        "category": "SCAM",
+        "type": "crypto romance",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F10",
+        "category": "SCAM",
+        "type": "employment visa fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F11",
+        "category": "SCAM",
+        "type": "QR parking",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F12",
+        "category": "SCAM",
+        "type": "bank security move funds",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F13",
+        "category": "AMBIGUOUS",
+        "type": "landlord new IBAN",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F14",
+        "category": "AMBIGUOUS",
+        "type": "charity collection",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F15",
+        "category": "AMBIGUOUS",
+        "type": "unknown caller passport",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F16",
+        "category": "AMBIGUOUS",
+        "type": "friend borrow via new account",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F17",
+        "category": "BENIGN",
+        "type": "pension question",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F18",
+        "category": "BENIGN",
+        "type": "self payment",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F19",
+        "category": "BENIGN",
+        "type": "gift for son",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F20",
+        "category": "BENIGN",
+        "type": "exchange rate",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F21",
+        "category": "BENIGN",
+        "type": "medication reminder",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F22",
+        "category": "BENIGN",
+        "type": "Arabic savings",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F23",
+        "category": "BENIGN",
+        "type": "helping mum",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "F24",
+        "category": "BENIGN",
+        "type": "rent planning",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 24,
+      "scam": {
+        "n": 12,
+        "protect": 12,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 4,
+        "pass": 4,
+        "missed": 0
+      },
+      "benign": {
+        "n": 8,
+        "pass": 8,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 24,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 12
+    }
+  },
+  "fresh2": {
+    "name": "Yumma fresh round 2 (raw pasted messages, run once before fixes)",
+    "rows": [
+      {
+        "id": "G01",
+        "category": "SCAM",
+        "type": "payee change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G02",
+        "category": "SCAM",
+        "type": "delivery fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G03",
+        "category": "SCAM",
+        "type": "family impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G04",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G05",
+        "category": "SCAM",
+        "type": "device takeover",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G06",
+        "category": "SCAM",
+        "type": "prize or advance fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G07",
+        "category": "SCAM",
+        "type": "romance",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G08",
+        "category": "SCAM",
+        "type": "phishing link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 90,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G09",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G10",
+        "category": "SCAM",
+        "type": "authority threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G11",
+        "category": "SCAM",
+        "type": "safe account",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G12",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G13",
+        "category": "SCAM",
+        "type": "phishing link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G14",
+        "category": "SCAM",
+        "type": "fine or toll",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G15",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G16",
+        "category": "SCAM",
+        "type": "family impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G17",
+        "category": "SCAM",
+        "type": "job or task fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G18",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G19",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G20",
+        "category": "SCAM",
+        "type": "prize or advance fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G21",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G22",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G23",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G24",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G25",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G26",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 20,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G27",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G28",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G29",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G30",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G31",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G32",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G33",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G34",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G35",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 50,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G36",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G37",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G38",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G39",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "G40",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 40,
+      "scam": {
+        "n": 20,
+        "protect": 20,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 8,
+        "pass": 8,
+        "missed": 0
+      },
+      "benign": {
+        "n": 12,
+        "pass": 12,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 40,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 20
+    }
+  },
+  "fresh3": {
+    "name": "Yumma fresh round 3 (raw pasted messages, run once before fixes)",
+    "rows": [
+      {
+        "id": "K01",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K02",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 80,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K03",
+        "category": "SCAM",
+        "type": "family impersonation",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K04",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K05",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 85,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K06",
+        "category": "SCAM",
+        "type": "device takeover",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K07",
+        "category": "SCAM",
+        "type": "payee change",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K08",
+        "category": "SCAM",
+        "type": "authority threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K09",
+        "category": "SCAM",
+        "type": "investment",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K10",
+        "category": "SCAM",
+        "type": "gift cards",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K11",
+        "category": "SCAM",
+        "type": "phishing link",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K12",
+        "category": "SCAM",
+        "type": "prize or advance fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K13",
+        "category": "SCAM",
+        "type": "credential request",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K14",
+        "category": "SCAM",
+        "type": "job or task fee",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 75,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K15",
+        "category": "SCAM",
+        "type": "authority threat",
+        "posture": "PAUSE_AND_PROTECT",
+        "score": 100,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K16",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K17",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K18",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K19",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K20",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K21",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 0,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K22",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 29,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K23",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 25,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K24",
+        "category": "BENIGN",
+        "type": "ordinary notice or request",
+        "posture": "INFORMATIONAL",
+        "score": 10,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K25",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 45,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K26",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K27",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K28",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K29",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      },
+      {
+        "id": "K30",
+        "category": "AMBIGUOUS",
+        "type": "grey zone",
+        "posture": "VERIFY",
+        "score": 40,
+        "result": "PASS",
+        "ai": null,
+        "externalActionTaken": false,
+        "authorizationGranted": false
+      }
+    ],
+    "summary": {
+      "total": 30,
+      "scam": {
+        "n": 15,
+        "protect": 15,
+        "verifyOnly": 0,
+        "missed": 0
+      },
+      "ambiguous": {
+        "n": 6,
+        "pass": 6,
+        "missed": 0
+      },
+      "benign": {
+        "n": 9,
+        "pass": 9,
+        "falseAlarms": 0
+      },
+      "noExternalActionEver": true,
+      "overallCorrect": 30,
+      "overallCorrectPct": 100,
+      "scamsWarnedAtLeastVerify": 15
+    }
+  }
+}

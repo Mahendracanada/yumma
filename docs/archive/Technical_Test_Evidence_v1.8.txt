@@ -1,0 +1,16 @@
+Yumma v1.8 verification
+Environment: Node.js runtime from the build environment.
+Commands executed:
+  npm test
+  npm run check
+
+Results:
+  Automated tests: 46 passed, 0 failed, 0 skipped.
+  Syntax checks: passed.
+
+New test file:
+  test/reliability-adversarial.test.js
+
+Coverage: benign informational request, reported scam content, prompt-injection text, short ambiguous request, unrecognised non-English request, model input boundary, unsafe OTP recommendation rejection, unsafe money-transfer recommendation rejection.
+
+This is synthetic engineering evidence, not independent validation or a real-world fraud accuracy claim.

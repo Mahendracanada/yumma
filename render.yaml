@@ -1,0 +1,22 @@
+# One-click Render Blueprint for Yumma's hosted judge link.
+# Render → New → Blueprint → pick this repository. It asks for the two secret values below.
+services:
+  - type: web
+    name: yumma-judge
+    runtime: node
+    plan: starter            # always on, so judges never wait for a cold start
+    region: frankfurt
+    buildCommand: npm run integrity && npm run check
+    startCommand: node src/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: YUMMA_JUDGE_MODE
+        value: "on"
+      - key: YUMMA_AI_DAILY_CAP
+        value: "2000"
+      - key: JUDGE_ACCESS_CODE   # 16+ letters and digits, chosen by me
+        sync: false
+      - key: ANTHROPIC_API_KEY   # my key, with a monthly spend limit set in the Anthropic Console
+        sync: false

@@ -1,0 +1,31 @@
+Yumma v2.3.0 verification evidence
+Date: 2026-11-18
+
+Command executed:
+  npm run verify
+
+Results:
+  JavaScript syntax checks: PASS
+  Automated Node.js tests: 53 passed, 0 failed, 0 skipped
+  Synthetic scenario regression: 4 passed, 0 failed
+  Local HTTP smoke test: PASS
+
+HTTP smoke checks:
+  Health endpoint responds and reports package version 2.3.0: PASS
+  External integrations/actions remain disabled: PASS
+  Readiness distinguishes local demo from public production: PASS
+  Four judge scenarios are discoverable: PASS
+  Browser home page responds: PASS
+
+Scenario regression:
+  bank-transfer-pressure: PAUSE_AND_PROTECT — PASS
+  otp-request: PAUSE_AND_PROTECT — PASS
+  remote-access: PAUSE_AND_PROTECT — PASS
+  benign-information: INFORMATIONAL — PASS
+
+Limitations:
+  Synthetic authored scenarios only; no real-world fraud accuracy estimate.
+  No live banking, wallet, messaging, healthcare or emergency integrations.
+  No external actions are enabled.
+  No production security certification, penetration test or independent assessment.
+  Android build and physical-device testing remain unverified.

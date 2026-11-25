@@ -1,0 +1,216 @@
+{
+  "name": "Yumma tuning set 2 (raw pasted messages, used to tune the v2.8 generalisation round)",
+  "frozen": "2026-11-24: written by me as raw texts, used for tuning; not a first-sight measure",
+  "cases": [
+    {
+      "id": "T201",
+      "category": "SCAM",
+      "type": "payee change",
+      "message": "Your Etisalat account will be disconnected today due to unpaid balance. Pay AED 189 now: etisalat-billing-ae.com"
+    },
+    {
+      "id": "T202",
+      "category": "SCAM",
+      "type": "fine or toll",
+      "message": "RTA: Your vehicle has an unpaid Salik fine of AED 400. Settle within 24 hours to avoid black points: salik-pay.info"
+    },
+    {
+      "id": "T203",
+      "category": "SCAM",
+      "type": "delivery fee",
+      "message": "Emirates Post: your parcel is on hold. Pay AED 7.50 customs fee here to release it today"
+    },
+    {
+      "id": "T204",
+      "category": "SCAM",
+      "type": "prize or advance fee",
+      "message": "Congratulations! Your number won AED 50,000 in the Etihad anniversary draw. Send your Emirates ID and card details to claim"
+    },
+    {
+      "id": "T205",
+      "category": "SCAM",
+      "type": "family impersonation",
+      "message": "Hi Mum, I dropped my phone in water, this is my new number. Can you transfer 2,500 for the repair? I'll explain later"
+    },
+    {
+      "id": "T206",
+      "category": "SCAM",
+      "type": "gift cards",
+      "message": "This is your manager Khalid. I'm in a board meeting and can't talk. Buy 5 Google Play cards of 500 and WhatsApp me the codes, urgent"
+    },
+    {
+      "id": "T207",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "We noticed suspicious activity on your ADCB account. To secure it, share the 6-digit code we just sent you"
+    },
+    {
+      "id": "T208",
+      "category": "SCAM",
+      "type": "safe account",
+      "message": "Dubai Police: a case of money laundering is registered against your Emirates ID. Move your savings to the government safe account to clear your name"
+    },
+    {
+      "id": "T209",
+      "category": "SCAM",
+      "type": "investment",
+      "message": "Earn 3% daily with our AI trading bot, guaranteed. Minimum deposit USDT 500. Join our Telegram group"
+    },
+    {
+      "id": "T210",
+      "category": "SCAM",
+      "type": "device takeover",
+      "message": "Amazon: your account is locked. Install AnyDesk so our support agent can verify your identity"
+    },
+    {
+      "id": "T211",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "Hello dear, I am a doctor with the UN in Syria. I want to send you a package with gold, you just pay the shipping AED 3,000"
+    },
+    {
+      "id": "T212",
+      "category": "SCAM",
+      "type": "phishing link",
+      "message": "Your FAB credit card has been blocked. Update your details at fab-verify-card.com within 1 hour"
+    },
+    {
+      "id": "T213",
+      "category": "SCAM",
+      "type": "job or task fee",
+      "message": "Job offer: work from home liking YouTube videos, earn AED 800 a day. Pay AED 250 registration to start"
+    },
+    {
+      "id": "T214",
+      "category": "SCAM",
+      "type": "authority threat",
+      "message": "ICP: your visa is cancelled due to an error. Pay the AED 1,200 fine today or you will be deported"
+    },
+    {
+      "id": "T215",
+      "category": "SCAM",
+      "type": "scam",
+      "message": "عميلنا العزيز، تم إيقاف بطاقتك. يرجى تحديث بياناتك عبر الرابط خلال ساعة"
+    },
+    {
+      "id": "T216",
+      "category": "SCAM",
+      "type": "credential request",
+      "message": "مبروك! ربحت جائزة 100 ألف درهم، أرسل رقم البطاقة والرمز السري لاستلامها"
+    },
+    {
+      "id": "T217",
+      "category": "SCAM",
+      "type": "payee change",
+      "message": "Hey it's Sara, I'm abroad and my card isn't working. Could you send me AED 1,500 by Western Union? Please don't tell my parents"
+    },
+    {
+      "id": "T218",
+      "category": "SCAM",
+      "type": "payee change",
+      "message": "Tenant notice: from this month pay rent to the new landlord account AE12 0260 0000 1234 5678 901, the old account is closed. Urgent"
+    },
+    {
+      "id": "T219",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your OTP for the ENBD app login is 482913. Do not share it with anyone."
+    },
+    {
+      "id": "T220",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Reminder: your Etisalat bill of AED 349 is due on 20 December. Pay through the e& app."
+    },
+    {
+      "id": "T221",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "I'm sending AED 300 to my brother for his gym fees like every month"
+    },
+    {
+      "id": "T222",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your salary of AED 14,500 has been credited to your account ending 3321."
+    },
+    {
+      "id": "T223",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Can you help me set up a standing order for my rent through my bank app?"
+    },
+    {
+      "id": "T224",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Mum, I paid the school fees today, the receipt is in your email"
+    },
+    {
+      "id": "T225",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "تم خصم 120 درهم من بطاقتك لدى كارفور. إذا لم تقم بهذه العملية اتصل بالبنك"
+    },
+    {
+      "id": "T226",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Your DEWA bill for November is AED 455. View it in the DEWA app."
+    },
+    {
+      "id": "T227",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Hi, it's your cousin Faisal. I'm short this month, can you lend me AED 2,000 until next week?"
+    },
+    {
+      "id": "T228",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Supplier email: please note our new bank details for future invoices, attached on letterhead"
+    },
+    {
+      "id": "T229",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "A friend asked me to receive AED 10,000 into my account and send it on to his brother, he'll give me 500 for helping"
+    },
+    {
+      "id": "T230",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "My landlord wants the deposit in cash before he gives me the keys"
+    },
+    {
+      "id": "T231",
+      "category": "SCAM",
+      "type": "phishing link",
+      "message": "Dear customer, your Emirates NBD card is suspended. Verify now at enbd-secure-check.com or lose access in 2 hours"
+    },
+    {
+      "id": "T232",
+      "category": "SCAM",
+      "type": "gift cards",
+      "message": "Hi it's Rahul from work, I'm stuck at a meeting, can you buy 3 iTunes cards of AED 200 and send me the codes? Will pay back tonight"
+    },
+    {
+      "id": "T233",
+      "category": "BENIGN",
+      "type": "ordinary notice or request",
+      "message": "Reminder: your DEWA bill of AED 612 is due on 15 December. Pay through the DEWA app."
+    },
+    {
+      "id": "T234",
+      "category": "AMBIGUOUS",
+      "type": "grey zone",
+      "message": "Hi, this is Ahmed from Al Noor Trading. Our bank changed, please send this month's payment to our new account ending 4471"
+    },
+    {
+      "id": "T235",
+      "category": "SCAM",
+      "type": "scam",
+      "message": "مرحبا، معك شرطة دبي، حسابك مرتبط بقضية غسيل أموال ويجب تحويل رصيدك إلى حساب آمن اليوم"
+    }
+  ]
+}
